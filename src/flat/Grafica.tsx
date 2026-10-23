@@ -10,8 +10,8 @@ import { P } from "../marca";
 // su cifra. Para «con / sin» a lo largo del tiempo. Sin ejes ni rejilla de más:
 // lo que se lee es la forma y la cifra del final.
 //
-// Las cifras de un vídeo NO se inventan: o salen de una cuenta que se enseña
-// («1 café al día × 1,80 €…») o el vídeo dice que es un ejemplo.
+// Una cifra que se entiende sola convence más que una de un estudio sin fuente: la
+// cuenta en pantalla («1 café al día × 1,80 €…») o «ejemplo» al lado.
 // ============================================================================
 
 type Serie = { nombre: string; valores: number[]; color?: string; relleno?: boolean };

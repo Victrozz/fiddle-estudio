@@ -27,9 +27,8 @@
 - Humor suave, nunca a costa del cliente de la tienda.
 - Un vídeo, una idea. Si hay tres ventajas, la tercera es otro vídeo.
 
-## Cosas que no se dicen
+## Lo que conviene avisar (y decide Víctor)
 
-- Cifras de estudios sin fuente. Las cuentas, enseñadas y con «ejemplo» si los datos
-  son supuestos.
+- Una cifra de un estudio sin fuente: mejor una cuenta que se vea, o «ejemplo».
 - Que la app hace algo que no hace, o sin decir de qué plan es.
-- Nombres de tiendas o clientes reales.
+- Una tienda o un cliente real: con su permiso.

@@ -13,8 +13,9 @@ quién son, las reglas y los pasos. Las `remotion-*` son las oficiales de Remoti
 
 - **Este repo es público.** Nada del vault de Víctor y Diego (`Victrozz/fiddleobsidian`):
   ni nombres de tiendas o clientes, ni teléfonos (salvo el de fiddle, que ya está en la
-  web), ni precios de nadie, ni notas. Ningún secreto. Ninguna tienda real en un vídeo:
-  «Tu cafetería».
+  web), ni precios de nadie, ni notas. Ningún secreto.
+- **Lo que dice un vídeo lo deciden Víctor y Diego.** Claude propone y avisa de un
+  riesgo una vez (ver la skill `video`), no pone reglas al contenido.
 - **El código habla español**: nombres, comentarios, textos y commits. Los comentarios
   explican por qué, no qué.
 - **Lo de la app se lee de la app, no se copia**: la paleta, la tarjeta (`CaraDelPase`),

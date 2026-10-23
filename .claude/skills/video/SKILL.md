@@ -36,25 +36,36 @@ que le iría mejor a SU idea) y se espera la respuesta:
   un giro o un remate. Ideas de ganchos y estructuras: [guion.md](guion.md).
 - Algunos vídeos son para clientes de las tiendas: solo si se pide.
 
-## 3. Reglas
+## 3. Lo que manda Víctor y lo que es solo un aviso
+
+**El contenido lo deciden Víctor y Diego.** Claude no pone reglas a lo que se dice en
+un vídeo: propone, y si ve un riesgo lo avisa UNA vez, en una línea, y hace lo que le
+digan.
+
+Lo que ya han decidido ellos (se sigue sin preguntar):
 
 - **Nunca menos de 10 s** (`src/videos/index.ts` lo comprueba). Lo normal, 15-30 s.
-- 1080x1920 a 30 fps. Nada que haya que leer fuera de `ZONA_LIBRE` (`guia`).
-- Español de España, de tú. Sin emojis: iconos de `Icono`.
-- **En pantalla, lo de fiddle son «puntos»**, nunca «sellos» (como en la app). «Sello»
-  solo para la cartilla de cartón, que es lo de antes.
-- **La tarjeta, la caja y los avisos son los de verdad**: `Tarjeta`, `Caja`,
-  `avisoDeTarjeta`. Nunca dibujar una tarjeta de fiddle a mano.
-- **Ninguna tienda ni cliente real**: «Tu cafetería» y los diseños de `DISENOS`. Este
-  repo es público: nada del vault de Víctor y Diego, ni nombres, ni precios de nadie.
-- **Las cifras no se inventan.** O es una cuenta que se ve en pantalla («1 café al día
-  × 1,80 € × 250 días = 450 €») o pone «ejemplo». Nada de «las tarjetas aumentan las
-  ventas un 30 %» sin fuente. Los segundos de «igual de rápido», medidos de verdad.
-- Lo que se diga de la app tiene que ser lo que la app hace hoy (y en qué plan:
-  grupos y avisos automáticos son del plan Completo). Si hay duda, mirar el código de
-  fiddle en `vendor/fiddle/src`.
-- Sin música dentro: se pone al publicar. Efectos sí (`Efecto`).
-- Cierre siempre con `Cierre` (logo de la web y el teléfono de `datos.js`).
+- Sobre todo para dueños de tiendas; algunos, para sus clientes.
+- **En pantalla, lo de fiddle son «puntos»**, nunca «sellos» (regla de la app desde el
+  15-10-2026). «Sello» vale para la cartilla de cartón, que es lo de antes.
+- Las opciones se llaman **flat** y **3d**, y se presentan las dos.
+
+Lo técnico (si no, el vídeo sale mal):
+
+- 1080x1920 a 30 fps. Lo que haya que leer, dentro de `ZONA_LIBRE`: lo de fuera lo
+  tapan los botones de TikTok e Instagram (`guia`).
+- La tarjeta, la caja y los avisos, con `Tarjeta`, `Caja` y `avisoDeTarjeta`: así son
+  los de verdad y cambian solos si cambia la app.
+- La música no va dentro: se pone al publicar (los sonidos de TikTok e Instagram ya
+  llevan su licencia). Efectos sí (`Efecto`).
+- Este repo es público: nada privado del vault ni datos de clientes en el código.
+
+Avisos que se dan (una vez) si salen, y se sigue lo que digan:
+
+- Una cifra que parece de un estudio y no tiene fuente: en España la publicidad
+  engañosa se puede denunciar. Basta con decirlo; si quieren la cifra, va.
+- Algo de la app que no hace hoy, o que es solo del plan Completo.
+- Una tienda o persona real en el vídeo: necesita su permiso.
 
 ## 4. Cómo se hace
 

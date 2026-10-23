@@ -41,7 +41,7 @@ iconos de la app en `public/marca/iconos/`.
 
 En los vídeos sale la tarjeta de verdad (el mismo código que la del móvil del cliente),
 con las tiendas inventadas de la web: todas se llaman «Tu cafetería» y cada una tiene su
-paleta, para enseñar la variedad. Nunca la tarjeta de un cliente real.
+paleta, para enseñar la variedad. La de una tienda real, solo con su permiso.
 
 ## Cómo hablamos
 
