@@ -15,7 +15,8 @@ import { BIEN, MAL, P } from "../marca";
 // ============================================================================
 
 type Celda = boolean | string;
-type Fila = { texto: string; izq: Celda; der: Celda };
+/** `en`: el fotograma en que entra la fila (con voz, el de su palabra); sin él, por turno. */
+type Fila = { texto: string; izq: Celda; der: Celda; en?: number };
 
 type Props = {
   filas: Fila[];
@@ -26,12 +27,14 @@ type Props = {
   tam?: number;
   /** Color de la columna de la derecha (la de fiddle). */
   acento?: string;
+  /** Ancho de cada columna de marcas (de partida, 4 veces `tam`). */
+  columna?: number;
 };
 
-export const Comparativa: React.FC<Props> = ({ filas, titulos = ["Cartón", "fiddle"], desde = 0, cadencia = 14, ancho = 880, tam = 46, acento = P.verde }) => {
+export const Comparativa: React.FC<Props> = ({ filas, titulos = ["Cartón", "fiddle"], desde = 0, cadencia = 14, ancho = 880, tam = 46, acento = P.verde, columna }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const col = tam * 4;
+  const col = columna ?? tam * 4;
   const cabecera = entrada(frame, fps, desde);
   return (
     <div style={{ width: ancho, fontSize: tam }}>
@@ -43,7 +46,7 @@ export const Comparativa: React.FC<Props> = ({ filas, titulos = ["Cartón", "fid
         ))}
       </div>
       {filas.map((f, i) => {
-        const llega = desde + 8 + i * cadencia;
+        const llega = f.en ?? desde + 8 + i * cadencia;
         const e = entrada(frame, fps, llega);
         return (
           <div

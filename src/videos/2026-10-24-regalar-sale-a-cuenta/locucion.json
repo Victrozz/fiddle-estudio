@@ -1,0 +1,15 @@
+{
+  "voz": "alvaro",
+  "velocidad": "+10%",
+  "lineas": [
+    {"id": "gancho", "texto": "¿Regalar cafés? | Eso es perder dinero… ¿o no?", "pausa": 0.5},
+    {"id": "cuenta", "texto": "Haz la cuenta.", "pausa": 0.4},
+    {"id": "nueve", "texto": "De cada diez cafés, regalas uno. | Los otros nueve, los cobras.", "pausa": 0.5},
+    {"id": "descuento", "texto": "Un descuento del diez por ciento lo pagas en cada café, | también a quien no vuelve.", "pausa": 0.5},
+    {"id": "premio", "texto": "El café gratis, en cambio, | solo se lo lleva quien ya ha vuelto nueve veces.", "pausa": 0.6},
+    {"id": "ejemplo", "texto": "Un habitual que viene cada día laborable te deja unos cuatrocientos cincuenta euros al año.", "pausa": 0.4},
+    {"id": "regalo", "texto": "Su premio: | veinticinco cafés.", "pausa": 0.6},
+    {"id": "remate", "texto": "No estás regalando un café. | Estás comprando que vuelva.", "pausa": 0.6},
+    {"id": "cierre", "texto": "fiddle. | Tarjetas de fidelización en el móvil."}
+  ]
+}

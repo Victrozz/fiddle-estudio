@@ -1,0 +1,403 @@
+{
+ "voz": "en-US-BrianMultilingualNeural",
+ "lineas": [
+  {
+   "id": "marta",
+   "audio": "voz/2026-10-24-quien-vuelve/01-marta.mp3",
+   "ms": 3500,
+   "palabras": [
+    {
+     "texto": "Marta",
+     "ms": 88,
+     "dur": 400
+    },
+    {
+     "texto": "venía",
+     "ms": 500,
+     "dur": 450
+    },
+    {
+     "texto": "a",
+     "ms": 963,
+     "dur": 75
+    },
+    {
+     "texto": "tu",
+     "ms": 1050,
+     "dur": 113
+    },
+    {
+     "texto": "cafetería",
+     "ms": 1175,
+     "dur": 700
+    },
+    {
+     "texto": "todas",
+     "ms": 1888,
+     "dur": 363
+    },
+    {
+     "texto": "las",
+     "ms": 2263,
+     "dur": 188
+    },
+    {
+     "texto": "mañanas.",
+     "ms": 2463,
+     "dur": 725
+    }
+   ]
+  },
+  {
+   "id": "dejo",
+   "audio": "voz/2026-10-24-quien-vuelve/02-dejo.mp3",
+   "ms": 2438,
+   "palabras": [
+    {
+     "texto": "Un",
+     "ms": 88,
+     "dur": 225
+    },
+    {
+     "texto": "día,",
+     "ms": 325,
+     "dur": 450
+    },
+    {
+     "texto": "dejó",
+     "ms": 1075,
+     "dur": 400
+    },
+    {
+     "texto": "de",
+     "ms": 1488,
+     "dur": 113
+    },
+    {
+     "texto": "venir.",
+     "ms": 1613,
+     "dur": 513
+    }
+   ]
+  },
+  {
+   "id": "cuenta",
+   "audio": "voz/2026-10-24-quien-vuelve/03-cuenta.mp3",
+   "ms": 1850,
+   "palabras": [
+    {
+     "texto": "¿Te",
+     "ms": 50,
+     "dur": 163
+    },
+    {
+     "texto": "habrías",
+     "ms": 225,
+     "dur": 475
+    },
+    {
+     "texto": "dado",
+     "ms": 713,
+     "dur": 250
+    },
+    {
+     "texto": "cuenta?",
+     "ms": 975,
+     "dur": 563
+    }
+   ]
+  },
+  {
+   "id": "sin",
+   "audio": "voz/2026-10-24-quien-vuelve/04-sin.mp3",
+   "ms": 2700,
+   "palabras": [
+    {
+     "texto": "Sin",
+     "ms": 100,
+     "dur": 288
+    },
+    {
+     "texto": "fiddle,",
+     "ms": 400,
+     "dur": 475
+    },
+    {
+     "texto": "pasan",
+     "ms": 1300,
+     "dur": 350
+    },
+    {
+     "texto": "los",
+     "ms": 1663,
+     "dur": 175
+    },
+    {
+     "texto": "días…",
+     "ms": 1850,
+     "dur": 538
+    }
+   ]
+  },
+  {
+   "id": "perdiste",
+   "audio": "voz/2026-10-24-quien-vuelve/05-perdiste.mp3",
+   "ms": 4038,
+   "palabras": [
+    {
+     "texto": "y",
+     "ms": 88,
+     "dur": 100
+    },
+    {
+     "texto": "Marta",
+     "ms": 200,
+     "dur": 363
+    },
+    {
+     "texto": "se",
+     "ms": 575,
+     "dur": 138
+    },
+    {
+     "texto": "convierte",
+     "ms": 725,
+     "dur": 625
+    },
+    {
+     "texto": "en",
+     "ms": 1363,
+     "dur": 113
+    },
+    {
+     "texto": "una",
+     "ms": 1488,
+     "dur": 188
+    },
+    {
+     "texto": "clienta",
+     "ms": 1688,
+     "dur": 488
+    },
+    {
+     "texto": "que",
+     "ms": 2188,
+     "dur": 125
+    },
+    {
+     "texto": "perdiste",
+     "ms": 2325,
+     "dur": 525
+    },
+    {
+     "texto": "sin",
+     "ms": 2863,
+     "dur": 188
+    },
+    {
+     "texto": "saberlo.",
+     "ms": 3063,
+     "dur": 663
+    }
+   ]
+  },
+  {
+   "id": "con",
+   "audio": "voz/2026-10-24-quien-vuelve/06-con.mp3",
+   "ms": 5588,
+   "palabras": [
+    {
+     "texto": "Con",
+     "ms": 100,
+     "dur": 200
+    },
+    {
+     "texto": "fiddle,",
+     "ms": 313,
+     "dur": 425
+    },
+    {
+     "texto": "lo",
+     "ms": 1288,
+     "dur": 113
+    },
+    {
+     "texto": "ves",
+     "ms": 1413,
+     "dur": 225
+    },
+    {
+     "texto": "a",
+     "ms": 1650,
+     "dur": 63
+    },
+    {
+     "texto": "tiempo:",
+     "ms": 1725,
+     "dur": 575
+    },
+    {
+     "texto": "Marta",
+     "ms": 2588,
+     "dur": 450
+    },
+    {
+     "texto": "lleva",
+     "ms": 3050,
+     "dur": 275
+    },
+    {
+     "texto": "más",
+     "ms": 3338,
+     "dur": 238
+    },
+    {
+     "texto": "días",
+     "ms": 3588,
+     "dur": 350
+    },
+    {
+     "texto": "de",
+     "ms": 3950,
+     "dur": 88
+    },
+    {
+     "texto": "lo",
+     "ms": 4050,
+     "dur": 88
+    },
+    {
+     "texto": "normal",
+     "ms": 4150,
+     "dur": 450
+    },
+    {
+     "texto": "sin",
+     "ms": 4613,
+     "dur": 188
+    },
+    {
+     "texto": "venir.",
+     "ms": 4813,
+     "dur": 463
+    }
+   ]
+  },
+  {
+   "id": "aviso",
+   "audio": "voz/2026-10-24-quien-vuelve/07-aviso.mp3",
+   "ms": 3350,
+   "palabras": [
+    {
+     "texto": "Le",
+     "ms": 100,
+     "dur": 175
+    },
+    {
+     "texto": "mandas",
+     "ms": 288,
+     "dur": 463
+    },
+    {
+     "texto": "un",
+     "ms": 763,
+     "dur": 125
+    },
+    {
+     "texto": "aviso,",
+     "ms": 900,
+     "dur": 563
+    },
+    {
+     "texto": "le",
+     "ms": 1813,
+     "dur": 213
+    },
+    {
+     "texto": "llega",
+     "ms": 2038,
+     "dur": 325
+    },
+    {
+     "texto": "al",
+     "ms": 2375,
+     "dur": 113
+    },
+    {
+     "texto": "móvil…",
+     "ms": 2500,
+     "dur": 538
+    }
+   ]
+  },
+  {
+   "id": "vuelve",
+   "audio": "voz/2026-10-24-quien-vuelve/08-vuelve.mp3",
+   "ms": 1150,
+   "palabras": [
+    {
+     "texto": "y",
+     "ms": 88,
+     "dur": 113
+    },
+    {
+     "texto": "vuelve.",
+     "ms": 213,
+     "dur": 625
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "audio": "voz/2026-10-24-quien-vuelve/09-cierre.mp3",
+   "ms": 3838,
+   "palabras": [
+    {
+     "texto": "fiddle.",
+     "ms": 88,
+     "dur": 600
+    },
+    {
+     "texto": "Que",
+     "ms": 1338,
+     "dur": 88
+    },
+    {
+     "texto": "nadie",
+     "ms": 1438,
+     "dur": 325
+    },
+    {
+     "texto": "se",
+     "ms": 1775,
+     "dur": 138
+    },
+    {
+     "texto": "vaya",
+     "ms": 1925,
+     "dur": 350
+    },
+    {
+     "texto": "sin",
+     "ms": 2288,
+     "dur": 263
+    },
+    {
+     "texto": "que",
+     "ms": 2563,
+     "dur": 113
+    },
+    {
+     "texto": "te",
+     "ms": 2688,
+     "dur": 113
+    },
+    {
+     "texto": "enteres.",
+     "ms": 2813,
+     "dur": 713
+    }
+   ]
+  }
+ ]
+}

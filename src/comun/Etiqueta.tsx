@@ -1,7 +1,8 @@
 import React from "react";
 import { P } from "../marca";
 
-// Una pastilla de texto en mayúsculas: «SIN FIDDLE», «CON FIDDLE», «HOY».
+// Una pastilla de texto: «Sin fiddle», «Con fiddle», «Hoy». Sin mayúsculas forzadas:
+// «fiddle» se escribe siempre en minúscula.
 
 type Props = { texto: string; fondo?: string; color?: string; tam?: number; style?: React.CSSProperties };
 
@@ -15,8 +16,7 @@ export const Etiqueta: React.FC<Props> = ({ texto, fondo = P.verde, color = P.pa
       color,
       fontSize: tam,
       fontWeight: 700,
-      letterSpacing: "0.06em",
-      textTransform: "uppercase",
+      letterSpacing: "-0.01em",
       lineHeight: 1,
       ...style,
     }}

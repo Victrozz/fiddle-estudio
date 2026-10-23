@@ -26,3 +26,10 @@ export const tramo = (frame: number, desde: number, dur: number, easing = Easing
 
 /** Un valor entre `a` y `b` según `t` (0..1). */
 export const mezcla = (a: number, b: number, t: number) => a + (b - a) * t;
+
+/** Un color entre dos `#rrggbb` según `t` (0..1): el aro que pasa de verde a ámbar. */
+export function mezclaColor(a: string, b: string, t: number) {
+  const n = (c: string, i: number) => parseInt(c.slice(1 + i * 2, 3 + i * 2), 16);
+  const canal = (i: number) => Math.round(mezcla(n(a, i), n(b, i), Math.max(0, Math.min(1, t)))).toString(16).padStart(2, "0");
+  return `#${canal(0)}${canal(1)}${canal(2)}`;
+}

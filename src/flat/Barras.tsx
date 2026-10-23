@@ -36,8 +36,8 @@ export const Barras: React.FC<Props> = ({ barras, ancho = 880, maximo, desde = 0
           <div key={b.etiqueta} style={{ opacity: e }}>
             <div style={{ fontSize: tam * 0.8, fontWeight: 600, color: P.vison, marginBottom: tam * 0.2 }}>{b.etiqueta}</div>
             <div style={{ display: "flex", alignItems: "center", gap: tam * 0.4 }}>
-              <div style={{ height: tam * 1.5, width: `${Math.max(0.01, largo) * 72}%`, background: color, borderRadius: tam * 0.3 }} />
-              <Contador a={b.valor} desde={llega} duracion={duracion} decimales={decimales} despues={despues} style={{ fontSize: tam * 1.1, fontWeight: 750, color }} />
+              <div style={{ height: tam * 1.5, width: `${Math.max(0.01, largo) * 62}%`, background: color, borderRadius: tam * 0.3 }} />
+              <Contador a={b.valor} desde={llega} duracion={duracion} decimales={decimales} despues={despues} style={{ fontSize: tam * 1.1, fontWeight: 750, color, whiteSpace: "nowrap" }} />
             </div>
           </div>
         );

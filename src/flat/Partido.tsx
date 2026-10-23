@@ -3,6 +3,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { Etiqueta } from "../comun/Etiqueta";
 import { entrada } from "../comun/movimiento";
 import { ALTO, ANCHO, SEGURA } from "../formato";
+import { LIMITE_ESCENA } from "../comun/Locucion";
 import { FONDOS, P, type Fondo } from "../marca";
 
 // ============================================================================
@@ -21,8 +22,11 @@ type Props = {
   desde?: number;
 };
 
-// La raya va en el centro de lo que se ve, no de la pantalla entera.
-export const CORTE = SEGURA.arriba + (ALTO - SEGURA.arriba - SEGURA.abajo) / 2;
+// La raya va en el centro de lo que se ve (entre lo que tapan las apps arriba y los
+// subtítulos abajo), no de la pantalla entera: así las dos mitades miden lo mismo.
+export const CORTE = (SEGURA.arriba + LIMITE_ESCENA) / 2;
+/** Lo que mide cada mitad sin contar lo tapado. */
+export const ALTO_MITAD = CORTE - SEGURA.arriba;
 
 export const Partido: React.FC<Props> = ({ arriba, abajo, etiquetas = ["Sin fiddle", "Con fiddle"], fondos = ["crema", "papel"], desde = 0 }) => {
   const frame = useCurrentFrame();
@@ -36,7 +40,7 @@ export const Partido: React.FC<Props> = ({ arriba, abajo, etiquetas = ["Sin fidd
       </div>
       <div style={{ position: "absolute", left: 0, top: CORTE, width: ANCHO, height: ALTO - CORTE, background: FONDOS[fondos[1]], overflow: "hidden" }}>
         {abajo}
-        <Etiqueta texto={etiquetas[1]} style={{ position: "absolute", left: SEGURA.izquierda, top: 40 }} />
+        <Etiqueta texto={etiquetas[1]} style={{ position: "absolute", left: SEGURA.izquierda, top: 28 }} />
       </div>
       <div style={{ position: "absolute", left: 0, top: CORTE - 3, height: 6, width: ANCHO * raya, background: P.espresso }} />
     </AbsoluteFill>

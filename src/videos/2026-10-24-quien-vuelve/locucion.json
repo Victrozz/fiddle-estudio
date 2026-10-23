@@ -1,0 +1,14 @@
+{
+  "voz": "brian",
+  "lineas": [
+    { "id": "marta", "texto": "Marta venía a tu cafetería todas las mañanas.", "pausa": 0.5 },
+    { "id": "dejo", "texto": "Un día, | dejó de venir.", "pausa": 0.8 },
+    { "id": "cuenta", "texto": "¿Te habrías dado cuenta?", "pausa": 0.9 },
+    { "id": "sin", "texto": "Sin fiddle, pasan los días…", "pausa": 0.3 },
+    { "id": "perdiste", "texto": "y Marta se convierte en una clienta que perdiste sin saberlo.", "pausa": 0.8 },
+    { "id": "con", "texto": "Con fiddle, lo ves a tiempo: | Marta lleva más días de lo normal sin venir.", "pausa": 0.4 },
+    { "id": "aviso", "texto": "Le mandas un aviso, | le llega al móvil…", "pausa": 0.3 },
+    { "id": "vuelve", "texto": "y vuelve.", "pausa": 1.8 },
+    { "id": "cierre", "texto": "fiddle. | Que nadie se vaya sin que te enteres." }
+  ]
+}

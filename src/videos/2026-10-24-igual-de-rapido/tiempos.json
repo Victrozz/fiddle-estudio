@@ -1,0 +1,458 @@
+{
+ "voz": "es-ES-AlvaroNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-igual-de-rapido/01-gancho.mp3",
+   "ms": 3477,
+   "palabras": [
+    {
+     "texto": "¿Una",
+     "ms": 50,
+     "dur": 261
+    },
+    {
+     "texto": "tarjeta",
+     "ms": 323,
+     "dur": 409
+    },
+    {
+     "texto": "en",
+     "ms": 743,
+     "dur": 68
+    },
+    {
+     "texto": "el",
+     "ms": 823,
+     "dur": 91
+    },
+    {
+     "texto": "móvil",
+     "ms": 925,
+     "dur": 284
+    },
+    {
+     "texto": "te",
+     "ms": 1220,
+     "dur": 91
+    },
+    {
+     "texto": "hace",
+     "ms": 1323,
+     "dur": 182
+    },
+    {
+     "texto": "perder",
+     "ms": 1516,
+     "dur": 318
+    },
+    {
+     "texto": "tiempo",
+     "ms": 1845,
+     "dur": 295
+    },
+    {
+     "texto": "en",
+     "ms": 2152,
+     "dur": 57
+    },
+    {
+     "texto": "la",
+     "ms": 2220,
+     "dur": 80
+    },
+    {
+     "texto": "caja?",
+     "ms": 2311,
+     "dur": 432
+    }
+   ]
+  },
+  {
+   "id": "vamos",
+   "audio": "voz/2026-10-24-igual-de-rapido/02-vamos.mp3",
+   "ms": 2011,
+   "palabras": [
+    {
+     "texto": "Vamos",
+     "ms": 48,
+     "dur": 398
+    },
+    {
+     "texto": "a",
+     "ms": 457,
+     "dur": 45
+    },
+    {
+     "texto": "cronometrarlo.",
+     "ms": 514,
+     "dur": 761
+    }
+   ]
+  },
+  {
+   "id": "carton",
+   "audio": "voz/2026-10-24-igual-de-rapido/03-carton.mp3",
+   "ms": 4966,
+   "palabras": [
+    {
+     "texto": "Cartón:",
+     "ms": 50,
+     "dur": 511
+    },
+    {
+     "texto": "buscar",
+     "ms": 1039,
+     "dur": 443
+    },
+    {
+     "texto": "la",
+     "ms": 1493,
+     "dur": 80
+    },
+    {
+     "texto": "cartilla,",
+     "ms": 1584,
+     "dur": 793
+    },
+    {
+     "texto": "sellar",
+     "ms": 2480,
+     "dur": 763
+    },
+    {
+     "texto": "y",
+     "ms": 3423,
+     "dur": 159
+    },
+    {
+     "texto": "devolverla.",
+     "ms": 3593,
+     "dur": 659
+    }
+   ]
+  },
+  {
+   "id": "fiddle",
+   "audio": "voz/2026-10-24-igual-de-rapido/04-fiddle.mp3",
+   "ms": 5026,
+   "palabras": [
+    {
+     "texto": "Con",
+     "ms": 48,
+     "dur": 250
+    },
+    {
+     "texto": "fiddle:",
+     "ms": 309,
+     "dur": 375
+    },
+    {
+     "texto": "escaneas",
+     "ms": 1152,
+     "dur": 568
+    },
+    {
+     "texto": "su",
+     "ms": 1732,
+     "dur": 91
+    },
+    {
+     "texto": "tarjeta",
+     "ms": 1834,
+     "dur": 818
+    },
+    {
+     "texto": "y",
+     "ms": 2766,
+     "dur": 182
+    },
+    {
+     "texto": "tocas",
+     "ms": 2959,
+     "dur": 386
+    },
+    {
+     "texto": "«Añadir",
+     "ms": 3573,
+     "dur": 307
+    },
+    {
+     "texto": "punto».",
+     "ms": 3891,
+     "dur": 455
+    }
+   ]
+  },
+  {
+   "id": "igual",
+   "audio": "voz/2026-10-24-igual-de-rapido/05-igual.mp3",
+   "ms": 3648,
+   "palabras": [
+    {
+     "texto": "Lo",
+     "ms": 48,
+     "dur": 216
+    },
+    {
+     "texto": "mismo.",
+     "ms": 275,
+     "dur": 466
+    },
+    {
+     "texto": "Un",
+     "ms": 1775,
+     "dur": 239
+    },
+    {
+     "texto": "par",
+     "ms": 2025,
+     "dur": 159
+    },
+    {
+     "texto": "de",
+     "ms": 2195,
+     "dur": 80
+    },
+    {
+     "texto": "segundos.",
+     "ms": 2286,
+     "dur": 625
+    }
+   ]
+  },
+  {
+   "id": "despues",
+   "audio": "voz/2026-10-24-igual-de-rapido/06-despues.mp3",
+   "ms": 2670,
+   "palabras": [
+    {
+     "texto": "La",
+     "ms": 50,
+     "dur": 205
+    },
+    {
+     "texto": "diferencia",
+     "ms": 266,
+     "dur": 534
+    },
+    {
+     "texto": "es",
+     "ms": 811,
+     "dur": 102
+    },
+    {
+     "texto": "lo",
+     "ms": 925,
+     "dur": 68
+    },
+    {
+     "texto": "que",
+     "ms": 1005,
+     "dur": 102
+    },
+    {
+     "texto": "pasa",
+     "ms": 1118,
+     "dur": 227
+    },
+    {
+     "texto": "después.",
+     "ms": 1357,
+     "dur": 580
+    }
+   ]
+  },
+  {
+   "id": "sabes",
+   "audio": "voz/2026-10-24-igual-de-rapido/07-sabes.mp3",
+   "ms": 7791,
+   "palabras": [
+    {
+     "texto": "Con",
+     "ms": 50,
+     "dur": 205
+    },
+    {
+     "texto": "el",
+     "ms": 266,
+     "dur": 91
+    },
+    {
+     "texto": "cartón,",
+     "ms": 368,
+     "dur": 409
+    },
+    {
+     "texto": "no",
+     "ms": 1061,
+     "dur": 125
+    },
+    {
+     "texto": "sabes",
+     "ms": 1198,
+     "dur": 307
+    },
+    {
+     "texto": "nada.",
+     "ms": 1516,
+     "dur": 398
+    },
+    {
+     "texto": "Con",
+     "ms": 2948,
+     "dur": 261
+    },
+    {
+     "texto": "fiddle,",
+     "ms": 3220,
+     "dur": 398
+    },
+    {
+     "texto": "sabes",
+     "ms": 3880,
+     "dur": 341
+    },
+    {
+     "texto": "quién",
+     "ms": 4232,
+     "dur": 159
+    },
+    {
+     "texto": "vino,",
+     "ms": 4402,
+     "dur": 307
+    },
+    {
+     "texto": "cuándo,",
+     "ms": 4959,
+     "dur": 375
+    },
+    {
+     "texto": "y",
+     "ms": 5573,
+     "dur": 34
+    },
+    {
+     "texto": "cuánto",
+     "ms": 5618,
+     "dur": 273
+    },
+    {
+     "texto": "le",
+     "ms": 5902,
+     "dur": 102
+    },
+    {
+     "texto": "falta",
+     "ms": 6016,
+     "dur": 284
+    },
+    {
+     "texto": "para",
+     "ms": 6311,
+     "dur": 159
+    },
+    {
+     "texto": "el",
+     "ms": 6482,
+     "dur": 68
+    },
+    {
+     "texto": "premio.",
+     "ms": 6561,
+     "dur": 500
+    }
+   ]
+  },
+  {
+   "id": "cliente",
+   "audio": "voz/2026-10-24-igual-de-rapido/08-cliente.mp3",
+   "ms": 2545,
+   "palabras": [
+    {
+     "texto": "Y",
+     "ms": 48,
+     "dur": 159
+    },
+    {
+     "texto": "a",
+     "ms": 218,
+     "dur": 57
+    },
+    {
+     "texto": "tu",
+     "ms": 286,
+     "dur": 102
+    },
+    {
+     "texto": "cliente",
+     "ms": 400,
+     "dur": 398
+    },
+    {
+     "texto": "le",
+     "ms": 809,
+     "dur": 102
+    },
+    {
+     "texto": "llega",
+     "ms": 923,
+     "dur": 216
+    },
+    {
+     "texto": "al",
+     "ms": 1150,
+     "dur": 68
+    },
+    {
+     "texto": "momento.",
+     "ms": 1230,
+     "dur": 580
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "audio": "voz/2026-10-24-igual-de-rapido/09-cierre.mp3",
+   "ms": 4825,
+   "palabras": [
+    {
+     "texto": "fiddle.",
+     "ms": 50,
+     "dur": 455
+    },
+    {
+     "texto": "Igual",
+     "ms": 1536,
+     "dur": 341
+    },
+    {
+     "texto": "de",
+     "ms": 1889,
+     "dur": 80
+    },
+    {
+     "texto": "rápido,",
+     "ms": 1980,
+     "dur": 747
+    },
+    {
+     "texto": "muchísimo",
+     "ms": 2889,
+     "dur": 591
+    },
+    {
+     "texto": "más",
+     "ms": 3491,
+     "dur": 193
+    },
+    {
+     "texto": "útil.",
+     "ms": 3695,
+     "dur": 420
+    }
+   ]
+  }
+ ]
+}

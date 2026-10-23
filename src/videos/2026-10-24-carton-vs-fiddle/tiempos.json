@@ -1,0 +1,536 @@
+{
+ "voz": "es-ES-AlvaroNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/01-gancho.mp3",
+   "ms": 3608,
+   "palabras": [
+    {
+     "texto": "Esta",
+     "ms": 49,
+     "dur": 307
+    },
+    {
+     "texto": "cartilla",
+     "ms": 367,
+     "dur": 436
+    },
+    {
+     "texto": "nunca",
+     "ms": 815,
+     "dur": 295
+    },
+    {
+     "texto": "te",
+     "ms": 1122,
+     "dur": 106
+    },
+    {
+     "texto": "va",
+     "ms": 1240,
+     "dur": 106
+    },
+    {
+     "texto": "a",
+     "ms": 1358,
+     "dur": 35
+    },
+    {
+     "texto": "decir",
+     "ms": 1405,
+     "dur": 330
+    },
+    {
+     "texto": "quién",
+     "ms": 1747,
+     "dur": 177
+    },
+    {
+     "texto": "ha",
+     "ms": 1935,
+     "dur": 35
+    },
+    {
+     "texto": "dejado",
+     "ms": 1983,
+     "dur": 354
+    },
+    {
+     "texto": "de",
+     "ms": 2348,
+     "dur": 83
+    },
+    {
+     "texto": "venir.",
+     "ms": 2442,
+     "dur": 401
+    }
+   ]
+  },
+  {
+   "id": "pierde",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/02-pierde.mp3",
+   "ms": 5156,
+   "palabras": [
+    {
+     "texto": "Se",
+     "ms": 50,
+     "dur": 295
+    },
+    {
+     "texto": "pierde,",
+     "ms": 357,
+     "dur": 413
+    },
+    {
+     "texto": "se",
+     "ms": 1243,
+     "dur": 271
+    },
+    {
+     "texto": "moja,",
+     "ms": 1526,
+     "dur": 567
+    },
+    {
+     "texto": "se",
+     "ms": 2270,
+     "dur": 259
+    },
+    {
+     "texto": "queda",
+     "ms": 2542,
+     "dur": 212
+    },
+    {
+     "texto": "olvidada",
+     "ms": 2766,
+     "dur": 425
+    },
+    {
+     "texto": "en",
+     "ms": 3202,
+     "dur": 83
+    },
+    {
+     "texto": "el",
+     "ms": 3296,
+     "dur": 106
+    },
+    {
+     "texto": "fondo",
+     "ms": 3414,
+     "dur": 259
+    },
+    {
+     "texto": "de",
+     "ms": 3685,
+     "dur": 94
+    },
+    {
+     "texto": "un",
+     "ms": 3792,
+     "dur": 106
+    },
+    {
+     "texto": "bolso.",
+     "ms": 3909,
+     "dur": 507
+    }
+   ]
+  },
+  {
+   "id": "nada",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/03-nada.mp3",
+   "ms": 4302,
+   "palabras": [
+    {
+     "texto": "Y",
+     "ms": 49,
+     "dur": 153
+    },
+    {
+     "texto": "tú",
+     "ms": 214,
+     "dur": 106
+    },
+    {
+     "texto": "no",
+     "ms": 332,
+     "dur": 118
+    },
+    {
+     "texto": "sabes",
+     "ms": 461,
+     "dur": 318
+    },
+    {
+     "texto": "nada:",
+     "ms": 792,
+     "dur": 271
+    },
+    {
+     "texto": "ni",
+     "ms": 1334,
+     "dur": 106
+    },
+    {
+     "texto": "quién",
+     "ms": 1452,
+     "dur": 189
+    },
+    {
+     "texto": "es,",
+     "ms": 1652,
+     "dur": 200
+    },
+    {
+     "texto": "ni",
+     "ms": 2053,
+     "dur": 118
+    },
+    {
+     "texto": "cuándo",
+     "ms": 2183,
+     "dur": 259
+    },
+    {
+     "texto": "vino",
+     "ms": 2454,
+     "dur": 224
+    },
+    {
+     "texto": "por",
+     "ms": 2690,
+     "dur": 153
+    },
+    {
+     "texto": "última",
+     "ms": 2855,
+     "dur": 295
+    },
+    {
+     "texto": "vez.",
+     "ms": 3162,
+     "dur": 377
+    }
+   ]
+  },
+  {
+   "id": "giro",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/04-giro.mp3",
+   "ms": 3620,
+   "palabras": [
+    {
+     "texto": "Con",
+     "ms": 50,
+     "dur": 271
+    },
+    {
+     "texto": "fiddle,",
+     "ms": 333,
+     "dur": 354
+    },
+    {
+     "texto": "la",
+     "ms": 946,
+     "dur": 83
+    },
+    {
+     "texto": "tarjeta",
+     "ms": 1041,
+     "dur": 389
+    },
+    {
+     "texto": "vive",
+     "ms": 1442,
+     "dur": 212
+    },
+    {
+     "texto": "en",
+     "ms": 1666,
+     "dur": 71
+    },
+    {
+     "texto": "el",
+     "ms": 1748,
+     "dur": 83
+    },
+    {
+     "texto": "móvil",
+     "ms": 1842,
+     "dur": 259
+    },
+    {
+     "texto": "de",
+     "ms": 2114,
+     "dur": 71
+    },
+    {
+     "texto": "tu",
+     "ms": 2196,
+     "dur": 94
+    },
+    {
+     "texto": "cliente.",
+     "ms": 2302,
+     "dur": 554
+    }
+   ]
+  },
+  {
+   "id": "ves",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/05-ves.mp3",
+   "ms": 4860,
+   "palabras": [
+    {
+     "texto": "Y",
+     "ms": 50,
+     "dur": 177
+    },
+    {
+     "texto": "tú",
+     "ms": 239,
+     "dur": 106
+    },
+    {
+     "texto": "ves",
+     "ms": 357,
+     "dur": 189
+    },
+    {
+     "texto": "quién",
+     "ms": 557,
+     "dur": 165
+    },
+    {
+     "texto": "viene,",
+     "ms": 734,
+     "dur": 366
+    },
+    {
+     "texto": "quién",
+     "ms": 1288,
+     "dur": 177
+    },
+    {
+     "texto": "vuelve",
+     "ms": 1477,
+     "dur": 673
+    },
+    {
+     "texto": "y",
+     "ms": 2303,
+     "dur": 165
+    },
+    {
+     "texto": "quién",
+     "ms": 2480,
+     "dur": 200
+    },
+    {
+     "texto": "lleva",
+     "ms": 2692,
+     "dur": 200
+    },
+    {
+     "texto": "semanas",
+     "ms": 2905,
+     "dur": 436
+    },
+    {
+     "texto": "sin",
+     "ms": 3353,
+     "dur": 153
+    },
+    {
+     "texto": "aparecer.",
+     "ms": 3518,
+     "dur": 601
+    }
+   ]
+  },
+  {
+   "id": "aviso",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/06-aviso.mp3",
+   "ms": 4186,
+   "palabras": [
+    {
+     "texto": "Con",
+     "ms": 50,
+     "dur": 224
+    },
+    {
+     "texto": "un",
+     "ms": 286,
+     "dur": 118
+    },
+    {
+     "texto": "toque,",
+     "ms": 416,
+     "dur": 318
+    },
+    {
+     "texto": "le",
+     "ms": 970,
+     "dur": 71
+    },
+    {
+     "texto": "mandas",
+     "ms": 1052,
+     "dur": 318
+    },
+    {
+     "texto": "un",
+     "ms": 1383,
+     "dur": 71
+    },
+    {
+     "texto": "aviso",
+     "ms": 1465,
+     "dur": 307
+    },
+    {
+     "texto": "que",
+     "ms": 1784,
+     "dur": 106
+    },
+    {
+     "texto": "le",
+     "ms": 1901,
+     "dur": 94
+    },
+    {
+     "texto": "llega",
+     "ms": 2008,
+     "dur": 224
+    },
+    {
+     "texto": "a",
+     "ms": 2243,
+     "dur": 24
+    },
+    {
+     "texto": "la",
+     "ms": 2279,
+     "dur": 83
+    },
+    {
+     "texto": "pantalla",
+     "ms": 2373,
+     "dur": 401
+    },
+    {
+     "texto": "de",
+     "ms": 2786,
+     "dur": 71
+    },
+    {
+     "texto": "bloqueo.",
+     "ms": 2868,
+     "dur": 554
+    }
+   ]
+  },
+  {
+   "id": "extra",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/07-extra.mp3",
+   "ms": 4942,
+   "palabras": [
+    {
+     "texto": "Sin",
+     "ms": 49,
+     "dur": 295
+    },
+    {
+     "texto": "imprimir",
+     "ms": 355,
+     "dur": 413
+    },
+    {
+     "texto": "nada.",
+     "ms": 780,
+     "dur": 436
+    },
+    {
+     "texto": "Y",
+     "ms": 2280,
+     "dur": 153
+    },
+    {
+     "texto": "en",
+     "ms": 2445,
+     "dur": 83
+    },
+    {
+     "texto": "la",
+     "ms": 2539,
+     "dur": 94
+    },
+    {
+     "texto": "caja,",
+     "ms": 2645,
+     "dur": 342
+    },
+    {
+     "texto": "igual",
+     "ms": 3247,
+     "dur": 236
+    },
+    {
+     "texto": "de",
+     "ms": 3494,
+     "dur": 83
+    },
+    {
+     "texto": "rápido.",
+     "ms": 3589,
+     "dur": 590
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "audio": "voz/2026-10-24-carton-vs-fiddle/08-cierre.mp3",
+   "ms": 4093,
+   "palabras": [
+    {
+     "texto": "fiddle.",
+     "ms": 50,
+     "dur": 472
+    },
+    {
+     "texto": "Tu",
+     "ms": 1585,
+     "dur": 177
+    },
+    {
+     "texto": "cartilla,",
+     "ms": 1774,
+     "dur": 507
+    },
+    {
+     "texto": "pero",
+     "ms": 2541,
+     "dur": 165
+    },
+    {
+     "texto": "en",
+     "ms": 2717,
+     "dur": 71
+    },
+    {
+     "texto": "el",
+     "ms": 2800,
+     "dur": 83
+    },
+    {
+     "texto": "móvil.",
+     "ms": 2894,
+     "dur": 436
+    }
+   ]
+  }
+ ]
+}

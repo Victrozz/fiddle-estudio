@@ -1,0 +1,15 @@
+{
+  "voz": "brian",
+  "lineas": [
+    { "id": "gancho", "texto": "Tu tarjeta de fidelización no tiene por qué ser un cartón beige.", "pausa": 0.5 },
+    { "id": "mira", "texto": "Mira.", "pausa": 0.5 },
+    { "id": "vaso", "texto": "Un vaso que se llena…", "pausa": 0.5 },
+    { "id": "luna", "texto": "una luna que se completa…", "pausa": 0.5 },
+    { "id": "doble", "texto": "dos cartillas en una…", "pausa": 0.5 },
+    { "id": "iniciales", "texto": "o tus iniciales, | con tus colores.", "pausa": 0.6 },
+    { "id": "abierto", "texto": "Y hasta dice si estás abierto.", "pausa": 0.6 },
+    { "id": "logo", "texto": "Con tu logo, | tu premio | y tu estilo, | en Apple Wallet y en Android.", "pausa": 0.5 },
+    { "id": "guardan", "texto": "Tus clientes la guardan en el móvil sin descargar ninguna aplicación.", "pausa": 0.6 },
+    { "id": "cierre", "texto": "fiddle. | Tu tarjeta, con tu cara." }
+  ]
+}

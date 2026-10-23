@@ -1,0 +1,425 @@
+{
+ "voz": "en-US-BrianMultilingualNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-tu-tarjeta/01-gancho.mp3",
+   "ms": 4150,
+   "palabras": [
+    {
+     "texto": "Tu",
+     "ms": 88,
+     "dur": 113
+    },
+    {
+     "texto": "tarjeta",
+     "ms": 213,
+     "dur": 463
+    },
+    {
+     "texto": "de",
+     "ms": 688,
+     "dur": 125
+    },
+    {
+     "texto": "fidelización",
+     "ms": 825,
+     "dur": 813
+    },
+    {
+     "texto": "no",
+     "ms": 1650,
+     "dur": 188
+    },
+    {
+     "texto": "tiene",
+     "ms": 1850,
+     "dur": 313
+    },
+    {
+     "texto": "por",
+     "ms": 2175,
+     "dur": 188
+    },
+    {
+     "texto": "qué",
+     "ms": 2375,
+     "dur": 113
+    },
+    {
+     "texto": "ser",
+     "ms": 2500,
+     "dur": 225
+    },
+    {
+     "texto": "un",
+     "ms": 2738,
+     "dur": 125
+    },
+    {
+     "texto": "cartón",
+     "ms": 2875,
+     "dur": 438
+    },
+    {
+     "texto": "beige.",
+     "ms": 3325,
+     "dur": 513
+    }
+   ]
+  },
+  {
+   "id": "mira",
+   "audio": "voz/2026-10-24-tu-tarjeta/02-mira.mp3",
+   "ms": 950,
+   "palabras": [
+    {
+     "texto": "Mira.",
+     "ms": 88,
+     "dur": 550
+    }
+   ]
+  },
+  {
+   "id": "vaso",
+   "audio": "voz/2026-10-24-tu-tarjeta/03-vaso.mp3",
+   "ms": 1763,
+   "palabras": [
+    {
+     "texto": "Un",
+     "ms": 88,
+     "dur": 213
+    },
+    {
+     "texto": "vaso",
+     "ms": 313,
+     "dur": 350
+    },
+    {
+     "texto": "que",
+     "ms": 675,
+     "dur": 125
+    },
+    {
+     "texto": "se",
+     "ms": 813,
+     "dur": 150
+    },
+    {
+     "texto": "llena…",
+     "ms": 975,
+     "dur": 475
+    }
+   ]
+  },
+  {
+   "id": "luna",
+   "audio": "voz/2026-10-24-tu-tarjeta/04-luna.mp3",
+   "ms": 2038,
+   "palabras": [
+    {
+     "texto": "una",
+     "ms": 88,
+     "dur": 250
+    },
+    {
+     "texto": "luna",
+     "ms": 350,
+     "dur": 325
+    },
+    {
+     "texto": "que",
+     "ms": 688,
+     "dur": 125
+    },
+    {
+     "texto": "se",
+     "ms": 825,
+     "dur": 138
+    },
+    {
+     "texto": "completa…",
+     "ms": 975,
+     "dur": 750
+    }
+   ]
+  },
+  {
+   "id": "doble",
+   "audio": "voz/2026-10-24-tu-tarjeta/05-doble.mp3",
+   "ms": 1925,
+   "palabras": [
+    {
+     "texto": "dos",
+     "ms": 88,
+     "dur": 300
+    },
+    {
+     "texto": "cartillas",
+     "ms": 400,
+     "dur": 650
+    },
+    {
+     "texto": "en",
+     "ms": 1063,
+     "dur": 113
+    },
+    {
+     "texto": "una…",
+     "ms": 1188,
+     "dur": 425
+    }
+   ]
+  },
+  {
+   "id": "iniciales",
+   "audio": "voz/2026-10-24-tu-tarjeta/06-iniciales.mp3",
+   "ms": 3125,
+   "palabras": [
+    {
+     "texto": "o",
+     "ms": 88,
+     "dur": 150
+    },
+    {
+     "texto": "tus",
+     "ms": 250,
+     "dur": 238
+    },
+    {
+     "texto": "iniciales,",
+     "ms": 500,
+     "dur": 813
+    },
+    {
+     "texto": "con",
+     "ms": 1563,
+     "dur": 275
+    },
+    {
+     "texto": "tus",
+     "ms": 1850,
+     "dur": 213
+    },
+    {
+     "texto": "colores.",
+     "ms": 2075,
+     "dur": 738
+    }
+   ]
+  },
+  {
+   "id": "abierto",
+   "audio": "voz/2026-10-24-tu-tarjeta/07-abierto.mp3",
+   "ms": 2388,
+   "palabras": [
+    {
+     "texto": "Y",
+     "ms": 88,
+     "dur": 138
+    },
+    {
+     "texto": "hasta",
+     "ms": 238,
+     "dur": 263
+    },
+    {
+     "texto": "dice",
+     "ms": 513,
+     "dur": 338
+    },
+    {
+     "texto": "si",
+     "ms": 863,
+     "dur": 175
+    },
+    {
+     "texto": "estás",
+     "ms": 1050,
+     "dur": 375
+    },
+    {
+     "texto": "abierto.",
+     "ms": 1438,
+     "dur": 638
+    }
+   ]
+  },
+  {
+   "id": "logo",
+   "audio": "voz/2026-10-24-tu-tarjeta/08-logo.mp3",
+   "ms": 5625,
+   "palabras": [
+    {
+     "texto": "Con",
+     "ms": 50,
+     "dur": 275
+    },
+    {
+     "texto": "tu",
+     "ms": 338,
+     "dur": 113
+    },
+    {
+     "texto": "logo,",
+     "ms": 463,
+     "dur": 551
+    },
+    {
+     "texto": "tu",
+     "ms": 1300,
+     "dur": 125
+    },
+    {
+     "texto": "premio",
+     "ms": 1438,
+     "dur": 588
+    },
+    {
+     "texto": "y",
+     "ms": 2313,
+     "dur": 125
+    },
+    {
+     "texto": "tu",
+     "ms": 2450,
+     "dur": 138
+    },
+    {
+     "texto": "estilo,",
+     "ms": 2600,
+     "dur": 638
+    },
+    {
+     "texto": "en",
+     "ms": 3525,
+     "dur": 188
+    },
+    {
+     "texto": "Apple",
+     "ms": 3725,
+     "dur": 300
+    },
+    {
+     "texto": "Wallet",
+     "ms": 4038,
+     "dur": 513
+    },
+    {
+     "texto": "y",
+     "ms": 4563,
+     "dur": 113
+    },
+    {
+     "texto": "en",
+     "ms": 4688,
+     "dur": 125
+    },
+    {
+     "texto": "Android.",
+     "ms": 4825,
+     "dur": 488
+    }
+   ]
+  },
+  {
+   "id": "guardan",
+   "audio": "voz/2026-10-24-tu-tarjeta/09-guardan.mp3",
+   "ms": 4538,
+   "palabras": [
+    {
+     "texto": "Tus",
+     "ms": 88,
+     "dur": 200
+    },
+    {
+     "texto": "clientes",
+     "ms": 300,
+     "dur": 525
+    },
+    {
+     "texto": "la",
+     "ms": 838,
+     "dur": 125
+    },
+    {
+     "texto": "guardan",
+     "ms": 975,
+     "dur": 438
+    },
+    {
+     "texto": "en",
+     "ms": 1425,
+     "dur": 100
+    },
+    {
+     "texto": "el",
+     "ms": 1538,
+     "dur": 113
+    },
+    {
+     "texto": "móvil",
+     "ms": 1663,
+     "dur": 388
+    },
+    {
+     "texto": "sin",
+     "ms": 2063,
+     "dur": 188
+    },
+    {
+     "texto": "descargar",
+     "ms": 2263,
+     "dur": 588
+    },
+    {
+     "texto": "ninguna",
+     "ms": 2863,
+     "dur": 500
+    },
+    {
+     "texto": "aplicación.",
+     "ms": 3375,
+     "dur": 850
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "audio": "voz/2026-10-24-tu-tarjeta/10-cierre.mp3",
+   "ms": 3613,
+   "palabras": [
+    {
+     "texto": "fiddle.",
+     "ms": 88,
+     "dur": 600
+    },
+    {
+     "texto": "Tu",
+     "ms": 1338,
+     "dur": 125
+    },
+    {
+     "texto": "tarjeta,",
+     "ms": 1475,
+     "dur": 650
+    },
+    {
+     "texto": "con",
+     "ms": 2488,
+     "dur": 213
+    },
+    {
+     "texto": "tu",
+     "ms": 2713,
+     "dur": 100
+    },
+    {
+     "texto": "cara.",
+     "ms": 2825,
+     "dur": 475
+    }
+   ]
+  }
+ ]
+}

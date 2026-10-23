@@ -28,6 +28,7 @@
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "@types/three": "0.186.0",
+    "microsoft-cognitiveservices-speech-sdk": "1.53.0",
     "typescript": "5.9.3"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "voz": "alvaro",
+  "velocidad": "+6%",
+  "lineas": [
+    {"id": "gancho", "texto": "Esta cartilla nunca te va a decir quién ha dejado de venir.", "pausa": 0.5},
+    {"id": "pierde", "texto": "Se pierde, | se moja, | se queda olvidada en el fondo de un bolso.", "pausa": 0.4},
+    {"id": "nada", "texto": "Y tú no sabes nada: ni quién es, ni cuándo vino por última vez.", "pausa": 0.6},
+    {"id": "giro", "texto": "Con fiddle, la tarjeta vive en el móvil de tu cliente.", "pausa": 0.4},
+    {"id": "ves", "texto": "Y tú ves quién viene, quién vuelve | y quién lleva semanas sin aparecer.", "pausa": 0.5},
+    {"id": "aviso", "texto": "Con un toque, le mandas un aviso que le llega a la pantalla de bloqueo.", "pausa": 0.5},
+    {"id": "extra", "texto": "Sin imprimir nada. | Y en la caja, igual de rápido.", "pausa": 0.5},
+    {"id": "cierre", "texto": "fiddle. | Tu cartilla, pero en el móvil."}
+  ]
+}

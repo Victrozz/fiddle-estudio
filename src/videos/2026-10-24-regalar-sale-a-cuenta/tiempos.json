@@ -1,0 +1,508 @@
+{
+ "voz": "es-ES-AlvaroNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/01-gancho.mp3",
+   "ms": 4557,
+   "palabras": [
+    {
+     "texto": "¿Regalar",
+     "ms": 50,
+     "dur": 489
+    },
+    {
+     "texto": "cafés?",
+     "ms": 550,
+     "dur": 511
+    },
+    {
+     "texto": "Eso",
+     "ms": 2095,
+     "dur": 330
+    },
+    {
+     "texto": "es",
+     "ms": 2436,
+     "dur": 91
+    },
+    {
+     "texto": "perder",
+     "ms": 2539,
+     "dur": 273
+    },
+    {
+     "texto": "dinero…",
+     "ms": 2823,
+     "dur": 364
+    },
+    {
+     "texto": "¿o",
+     "ms": 3482,
+     "dur": 23
+    },
+    {
+     "texto": "no?",
+     "ms": 3516,
+     "dur": 307
+    }
+   ]
+  },
+  {
+   "id": "cuenta",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/02-cuenta.mp3",
+   "ms": 1602,
+   "palabras": [
+    {
+     "texto": "Haz",
+     "ms": 48,
+     "dur": 205
+    },
+    {
+     "texto": "la",
+     "ms": 264,
+     "dur": 102
+    },
+    {
+     "texto": "cuenta.",
+     "ms": 377,
+     "dur": 489
+    }
+   ]
+  },
+  {
+   "id": "nueve",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/03-nueve.mp3",
+   "ms": 5807,
+   "palabras": [
+    {
+     "texto": "De",
+     "ms": 50,
+     "dur": 205
+    },
+    {
+     "texto": "cada",
+     "ms": 266,
+     "dur": 193
+    },
+    {
+     "texto": "diez",
+     "ms": 470,
+     "dur": 216
+    },
+    {
+     "texto": "cafés,",
+     "ms": 698,
+     "dur": 432
+    },
+    {
+     "texto": "regalas",
+     "ms": 1357,
+     "dur": 455
+    },
+    {
+     "texto": "uno.",
+     "ms": 1823,
+     "dur": 398
+    },
+    {
+     "texto": "Los",
+     "ms": 3255,
+     "dur": 295
+    },
+    {
+     "texto": "otros",
+     "ms": 3561,
+     "dur": 250
+    },
+    {
+     "texto": "nueve,",
+     "ms": 3823,
+     "dur": 307
+    },
+    {
+     "texto": "los",
+     "ms": 4391,
+     "dur": 148
+    },
+    {
+     "texto": "cobras.",
+     "ms": 4550,
+     "dur": 523
+    }
+   ]
+  },
+  {
+   "id": "descuento",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/04-descuento.mp3",
+   "ms": 4972,
+   "palabras": [
+    {
+     "texto": "Un",
+     "ms": 48,
+     "dur": 205
+    },
+    {
+     "texto": "descuento",
+     "ms": 264,
+     "dur": 420
+    },
+    {
+     "texto": "del",
+     "ms": 695,
+     "dur": 148
+    },
+    {
+     "texto": "diez",
+     "ms": 855,
+     "dur": 227
+    },
+    {
+     "texto": "por",
+     "ms": 1093,
+     "dur": 159
+    },
+    {
+     "texto": "ciento",
+     "ms": 1264,
+     "dur": 273
+    },
+    {
+     "texto": "lo",
+     "ms": 1548,
+     "dur": 102
+    },
+    {
+     "texto": "pagas",
+     "ms": 1661,
+     "dur": 284
+    },
+    {
+     "texto": "en",
+     "ms": 1957,
+     "dur": 91
+    },
+    {
+     "texto": "cada",
+     "ms": 2059,
+     "dur": 182
+    },
+    {
+     "texto": "café,",
+     "ms": 2252,
+     "dur": 352
+    },
+    {
+     "texto": "también",
+     "ms": 3107,
+     "dur": 375
+    },
+    {
+     "texto": "a",
+     "ms": 3493,
+     "dur": 45
+    },
+    {
+     "texto": "quien",
+     "ms": 3550,
+     "dur": 170
+    },
+    {
+     "texto": "no",
+     "ms": 3732,
+     "dur": 102
+    },
+    {
+     "texto": "vuelve.",
+     "ms": 3845,
+     "dur": 443
+    }
+   ]
+  },
+  {
+   "id": "premio",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/05-premio.mp3",
+   "ms": 5215,
+   "palabras": [
+    {
+     "texto": "El",
+     "ms": 48,
+     "dur": 193
+    },
+    {
+     "texto": "café",
+     "ms": 252,
+     "dur": 250
+    },
+    {
+     "texto": "gratis,",
+     "ms": 514,
+     "dur": 409
+    },
+    {
+     "texto": "en",
+     "ms": 1116,
+     "dur": 125
+    },
+    {
+     "texto": "cambio,",
+     "ms": 1252,
+     "dur": 375
+    },
+    {
+     "texto": "solo",
+     "ms": 2141,
+     "dur": 375
+    },
+    {
+     "texto": "se",
+     "ms": 2527,
+     "dur": 114
+    },
+    {
+     "texto": "lo",
+     "ms": 2652,
+     "dur": 91
+    },
+    {
+     "texto": "lleva",
+     "ms": 2755,
+     "dur": 250
+    },
+    {
+     "texto": "quien",
+     "ms": 3016,
+     "dur": 193
+    },
+    {
+     "texto": "ya",
+     "ms": 3220,
+     "dur": 114
+    },
+    {
+     "texto": "ha",
+     "ms": 3345,
+     "dur": 34
+    },
+    {
+     "texto": "vuelto",
+     "ms": 3391,
+     "dur": 307
+    },
+    {
+     "texto": "nueve",
+     "ms": 3709,
+     "dur": 239
+    },
+    {
+     "texto": "veces.",
+     "ms": 3959,
+     "dur": 568
+    }
+   ]
+  },
+  {
+   "id": "ejemplo",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/06-ejemplo.mp3",
+   "ms": 5102,
+   "palabras": [
+    {
+     "texto": "Un",
+     "ms": 48,
+     "dur": 193
+    },
+    {
+     "texto": "habitual",
+     "ms": 252,
+     "dur": 432
+    },
+    {
+     "texto": "que",
+     "ms": 695,
+     "dur": 102
+    },
+    {
+     "texto": "viene",
+     "ms": 809,
+     "dur": 261
+    },
+    {
+     "texto": "cada",
+     "ms": 1082,
+     "dur": 205
+    },
+    {
+     "texto": "día",
+     "ms": 1298,
+     "dur": 170
+    },
+    {
+     "texto": "laborable",
+     "ms": 1480,
+     "dur": 500
+    },
+    {
+     "texto": "te",
+     "ms": 1991,
+     "dur": 102
+    },
+    {
+     "texto": "deja",
+     "ms": 2105,
+     "dur": 239
+    },
+    {
+     "texto": "unos",
+     "ms": 2355,
+     "dur": 205
+    },
+    {
+     "texto": "cuatrocientos",
+     "ms": 2570,
+     "dur": 580
+    },
+    {
+     "texto": "cincuenta",
+     "ms": 3161,
+     "dur": 420
+    },
+    {
+     "texto": "euros",
+     "ms": 3593,
+     "dur": 273
+    },
+    {
+     "texto": "al",
+     "ms": 3877,
+     "dur": 91
+    },
+    {
+     "texto": "año.",
+     "ms": 3980,
+     "dur": 386
+    }
+   ]
+  },
+  {
+   "id": "regalo",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/07-regalo.mp3",
+   "ms": 2989,
+   "palabras": [
+    {
+     "texto": "Su",
+     "ms": 50,
+     "dur": 250
+    },
+    {
+     "texto": "premio:",
+     "ms": 311,
+     "dur": 375
+    },
+    {
+     "texto": "veinticinco",
+     "ms": 1148,
+     "dur": 568
+    },
+    {
+     "texto": "cafés.",
+     "ms": 1727,
+     "dur": 523
+    }
+   ]
+  },
+  {
+   "id": "remate",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/08-remate.mp3",
+   "ms": 4566,
+   "palabras": [
+    {
+     "texto": "No",
+     "ms": 48,
+     "dur": 216
+    },
+    {
+     "texto": "estás",
+     "ms": 275,
+     "dur": 227
+    },
+    {
+     "texto": "regalando",
+     "ms": 514,
+     "dur": 398
+    },
+    {
+     "texto": "un",
+     "ms": 923,
+     "dur": 80
+    },
+    {
+     "texto": "café.",
+     "ms": 1014,
+     "dur": 420
+    },
+    {
+     "texto": "Estás",
+     "ms": 2468,
+     "dur": 375
+    },
+    {
+     "texto": "comprando",
+     "ms": 2855,
+     "dur": 409
+    },
+    {
+     "texto": "que",
+     "ms": 3275,
+     "dur": 91
+    },
+    {
+     "texto": "vuelva.",
+     "ms": 3377,
+     "dur": 455
+    }
+   ]
+  },
+  {
+   "id": "cierre",
+   "audio": "voz/2026-10-24-regalar-sale-a-cuenta/09-cierre.mp3",
+   "ms": 4055,
+   "palabras": [
+    {
+     "texto": "fiddle.",
+     "ms": 50,
+     "dur": 455
+    },
+    {
+     "texto": "Tarjetas",
+     "ms": 1539,
+     "dur": 500
+    },
+    {
+     "texto": "de",
+     "ms": 2050,
+     "dur": 80
+    },
+    {
+     "texto": "fidelización",
+     "ms": 2141,
+     "dur": 580
+    },
+    {
+     "texto": "en",
+     "ms": 2732,
+     "dur": 68
+    },
+    {
+     "texto": "el",
+     "ms": 2811,
+     "dur": 80
+    },
+    {
+     "texto": "móvil.",
+     "ms": 2902,
+     "dur": 420
+    }
+   ]
+  }
+ ]
+}

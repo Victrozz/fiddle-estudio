@@ -1,0 +1,15 @@
+{
+  "voz": "alvaro",
+  "velocidad": "+10%",
+  "lineas": [
+    {"id": "gancho", "texto": "¿Una tarjeta en el móvil te hace perder tiempo en la caja?", "pausa": 0.4},
+    {"id": "vamos", "texto": "Vamos a cronometrarlo.", "pausa": 0.5},
+    {"id": "carton", "texto": "Cartón: | buscar la cartilla, | sellar | y devolverla.", "pausa": 0.4},
+    {"id": "fiddle", "texto": "Con fiddle: | escaneas su tarjeta | y tocas «Añadir punto».", "pausa": 0.5},
+    {"id": "igual", "texto": "Lo mismo. | Un par de segundos.", "pausa": 0.6},
+    {"id": "despues", "texto": "La diferencia es lo que pasa después.", "pausa": 0.4},
+    {"id": "sabes", "texto": "Con el cartón, no sabes nada. | Con fiddle, sabes quién vino, cuándo, y cuánto le falta para el premio.", "pausa": 0.4},
+    {"id": "cliente", "texto": "Y a tu cliente le llega al momento.", "pausa": 0.6},
+    {"id": "cierre", "texto": "fiddle. | Igual de rápido, | muchísimo más útil."}
+  ]
+}

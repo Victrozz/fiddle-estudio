@@ -1,0 +1,13 @@
+{
+  "_": "Las voces de los vídeos, elegidas de oído por Víctor el 24-10-2026 entre las de la Release Prueba-de-voces-azure. Son de Microsoft Azure (recurso Speech en germanywestcentral). Un vídeo dice cuál usa en su locucion.json; sin decirlo, la de porDefecto.",
+  "porDefecto": "alvaro",
+  "alvaro": {
+    "voz": "es-ES-AlvaroNeural",
+    "nota": "Hombre, de España. Clara y de anuncio."
+  },
+  "brian": {
+    "voz": "en-US-BrianMultilingualNeural",
+    "idioma": "es-ES",
+    "nota": "Hombre, más cercana y de conversación. Es una voz multilingüe: se le pide español de España con <lang>."
+  }
+}
