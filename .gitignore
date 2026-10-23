@@ -1,0 +1,8 @@
+node_modules/
+# El código de fiddle lo trae scripts/traer-fiddle.mjs: no se copia aquí.
+vendor/
+# Lo renderizado va a las Releases de GitHub, no al repo (ver README).
+out/
+.env
+.DS_Store
+Thumbs.db

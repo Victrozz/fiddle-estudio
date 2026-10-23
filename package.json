@@ -1,0 +1,33 @@
+{
+  "name": "fiddle-estudio",
+  "private": true,
+  "description": "La marca de fiddle y los vídeos para redes, hechos con código (Remotion).",
+  "scripts": {
+    "postinstall": "node scripts/traer-fiddle.mjs",
+    "fiddle": "node scripts/traer-fiddle.mjs",
+    "studio": "remotion studio",
+    "still": "remotion still",
+    "render": "remotion render",
+    "sonidos": "node scripts/sintetizar-sonidos.mjs",
+    "comprobar": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "@remotion/cli": "4.0.538",
+    "@remotion/fonts": "4.0.538",
+    "@remotion/layout-utils": "4.0.538",
+    "@remotion/noise": "4.0.538",
+    "@remotion/three": "4.0.538",
+    "@remotion/transitions": "4.0.538",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.538",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,76 @@
+# Renderiza un vídeo en GitHub (sin ocupar nada en el ordenador) y lo deja en una
+# Release con el mismo nombre: el MP4, la portada y el guion. Las Releases no pesan en
+# el repo. Se lanza a mano: Actions → Render, o `gh workflow run render.yml -f id=<id>`.
+
+name: Render
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "El id del vídeo, como sale en el Studio (p. ej. 2026-10-24-carton-vs-fiddle)"
+        required: true
+      publicar:
+        description: "Dejarlo en una Release (si no, solo como artefacto del run, 90 días)"
+        type: boolean
+        default: true
+      portada:
+        description: "El fotograma de la portada"
+        default: "45"
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      ID: ${{ inputs.id }}
+      PORTADA: ${{ inputs.portada }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Comprobar el id
+        run: |
+          [[ "$ID" =~ ^[A-Za-z0-9-]+$ ]] || { echo "El id solo lleva letras, números y guiones: $ID"; exit 1; }
+          [[ "$PORTADA" =~ ^[0-9]+$ ]] || { echo "La portada es un número de fotograma: $PORTADA"; exit 1; }
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # Instala y baja el código de fiddle (main): la tarjeta y la caja de los vídeos.
+      - run: npm ci
+
+      # Sin tarjeta gráfica: el 3D va por software (swangle). Lento, pero sale igual.
+      - name: Render
+        run: |
+          npx remotion render "$ID" "out/$ID.mp4" --gl=swangle
+          npx remotion still "$ID" "out/$ID.png" --frame="$PORTADA" --gl=swangle
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.id }}
+          path: out/
+
+      - name: Release
+        if: inputs.publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          GUION="src/videos/$ID/guion.md"
+          if [ -f "$GUION" ]; then cp "$GUION" "out/$ID-guion.md"; NOTAS="$GUION"; else NOTAS=""; fi
+          ARCHIVOS=("out/$ID.mp4" "out/$ID.png")
+          [ -f "out/$ID-guion.md" ] && ARCHIVOS+=("out/$ID-guion.md")
+          PREVIA=()
+          # Los muestrarios enseñan las piezas: no son vídeos para publicar.
+          [[ "$ID" == Muestrario-* ]] && PREVIA=(--prerelease)
+          if gh release view "$ID" > /dev/null 2>&1; then
+            gh release upload "$ID" "${ARCHIVOS[@]}" --clobber
+          elif [ -n "$NOTAS" ]; then
+            gh release create "$ID" "${ARCHIVOS[@]}" --title "$ID" --notes-file "$NOTAS" "${PREVIA[@]}"
+          else
+            gh release create "$ID" "${ARCHIVOS[@]}" --title "$ID" --notes "Render de $ID (commit $GITHUB_SHA)." "${PREVIA[@]}"
+          fi
