@@ -30,8 +30,10 @@ Los «Muestrario» no son vídeos para publicar: enseñan las piezas de cada kit
 
 - **Con Claude Code en la nube** (claude.ai/code, con este repo): no ocupa nada en tu
   ordenador. Hace falta Node 22.
-- **En un ordenador**: `npm install` (unos 450 MB entre dependencias y el Chrome de
-  Remotion) y `npm run studio`. Para liberar el sitio, se borra `node_modules`.
+- **En un ordenador**: `npm install` y `npm run studio`. Ocupa unos 600 MB (las
+  dependencias y el Chrome de Remotion) más la caché de los renders, que crece con el
+  uso (`node_modules/.cache`, unos 300 MB; se puede borrar cuando se quiera). Para
+  liberarlo todo, se borra `node_modules`.
 - **El render, en GitHub**: Actions → Render → el id del vídeo. Gratis en un repo público.
 
 ## Qué hay en GitHub y qué no
