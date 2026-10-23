@@ -56,6 +56,18 @@ paleta, para enseñar la variedad. La de una tienda real, solo con su permiso.
 `public/marca/wallet/`: los oficiales de Apple y Google, **sin tocar** (sus normas no
 dejan cambiarlos de color ni de forma).
 
+## Voz
+
+Los vídeos van con voz y subtítulos. Las dos voces de fiddle (elegidas el 24-10-2026, de
+Microsoft Azure; `scripts/voces/elegidas.json`):
+
+- **Álvaro** (`es-ES-AlvaroNeural`): hombre, de España, clara y de anuncio. La de partida.
+- **Brian** (`en-US-BrianMultilingualNeural`): más cercana y de conversación, hablando
+  español de España.
+
+«fiddle» se dice **«fídel»** (`scripts/voces/pronunciacion.json`); se escribe siempre
+«fiddle», en minúscula.
+
 ## Sonido
 
 Efectos cortos sintetizados (`public/sonidos/`, `npm run sonidos`): el punto (`pop`), el

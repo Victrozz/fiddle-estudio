@@ -24,7 +24,12 @@ Marca: [MARCA.md](MARCA.md).
 ## Los vídeos
 
 Cada vídeo terminado es una [Release](../../releases) con su MP4, la portada y el guion.
-Los «Muestrario» no son vídeos para publicar: enseñan las piezas de cada kit.
+Los «Muestrario» no son vídeos para publicar: enseñan las piezas de cada kit, y las
+«Prueba-de-voces» son las muestras con las que se eligieron las voces.
+
+Llevan voz (Álvaro o Brian, de Microsoft Azure) y subtítulos que van con ella: el texto
+de cada vídeo está en su `locucion.json` y todo el vídeo se coloca con los tiempos de la
+voz. La música no va dentro: se pone al publicar, con un sonido de la red.
 
 ## Trabajar desde cualquier sitio
 

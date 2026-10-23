@@ -48,6 +48,10 @@ quién son, las reglas y los pasos. Las `remotion-*` son las oficiales de Remoti
 - `gh workflow run render.yml -f id=<id>`: render en GitHub y su Release.
 - `npm run fiddle`: poner al día el código de fiddle. Con `FIDDLE_DIR=../fiddle` se usa la
   copia local de la app (para enseñar algo que aún no está en main).
+- `node scripts/voces/locutar.mjs <id>`: la voz de un vídeo (con `AZURE_SPEECH_KEY` y
+  `AZURE_SPEECH_REGION` en el entorno), o en GitHub: `gh workflow run locutar.yml -f ids=<id>`
+  (con los secretos del repo). **La clave de Azure no se escribe en ningún fichero.**
+- `gh workflow run voces.yml`: prueba de voces para elegir de oído (Release con los audios).
 - `npm run sonidos`: volver a generar los efectos.
 - `npm run comprobar`: TypeScript.
 

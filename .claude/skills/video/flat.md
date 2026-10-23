@@ -23,6 +23,11 @@ ejemplos de uso. Todo se mueve con `src/comun/movimiento.ts` (`entrada`, `salida
 | `Efecto` | Un sonido: `pop`, `tic`, `ding`, `golpe`, `zas`, `caja` (`npm run sonidos`). |
 | `Cierre` | Los últimos 2-3 s: logo, lema y teléfono. |
 | `Icono` | Los iconos de la app (check, cerrar, campana, clientes, cartera, reloj, regalo…). |
+| `crearHorario`, `Locucion`, `Subtitulos` | La voz: cuándo empieza cada frase y cada palabra, el audio y los subtítulos que van con él. |
+| `Ventana`, `ZonaEscena` | Una escena entre dos fotogramas (absolutos, del horario) y el hueco donde va lo que se lee. |
+| `MovilGrande`, `AvisoGrande`, `puntoDelMovil` | El móvil que sube grande desde abajo, y el aviso ampliado que sale de él (a tamaño real no se lee). |
+| `PantallaTarjeta` | La pantalla de un móvil con la tarjeta guardada y, con `conQR`, su QR y su código. |
+| `QrFalso` | Un QR que no se puede escanear: para no poner el serial de nadie. |
 
 ## Lo del póster (`src/flat/`)
 
@@ -39,6 +44,8 @@ ejemplos de uso. Todo se mueve con `src/comun/movimiento.ts` (`entrada`, `salida
 | `Tazas` | Una taza por visita; `gratis` marca las regaladas. |
 | `Trazo` | Rotulador: `subrayado`, `rodear`, `flecha`, `tachar`. |
 | `Cortina` | Paño de color que barre la pantalla (con `zas`). Para cambios de escena del póster; fundidos y deslizamientos, `TransitionSeries` de `@remotion/transitions`. |
+| `ListaClientes` | Filas de clientes con los estados del CRM de la app (A su ritmo, Nuevo, En riesgo…); una fila puede cambiar de estado en un fotograma. |
+| `Cuenta` | Una cuenta que se escribe trozo a trozo: «1,80 € × 250 = 450 €». |
 
 ## El estilo
 

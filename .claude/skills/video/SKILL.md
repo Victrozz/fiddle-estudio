@@ -44,7 +44,11 @@ digan.
 
 Lo que ya han decidido ellos (se sigue sin preguntar):
 
-- **Nunca menos de 10 s** (`src/videos/index.ts` lo comprueba). Lo normal, 15-30 s.
+- **Nunca menos de 10 s** (`src/videos/index.ts` lo comprueba). Lo normal, 30-40 s,
+  con aire: que se vea natural y den ganas de verlo entero.
+- **Con voz y subtítulos**: Álvaro (es-ES-AlvaroNeural) o Brian
+  (en-US-BrianMultilingualNeural hablando español de España), elegidas por Víctor el
+  24-10-2026. «fiddle» se dice «fídel».
 - Sobre todo para dueños de tiendas; algunos, para sus clientes.
 - **En pantalla, lo de fiddle son «puntos»**, nunca «sellos» (regla de la app desde el
   15-10-2026). «Sello» vale para la cartilla de cartón, que es lo de antes.
@@ -69,15 +73,29 @@ Avisos que se dan (una vez) si salen, y se sigue lo que digan:
 
 ## 4. Cómo se hace
 
+Los vídeos llevan **voz** (una persona sintética que lo cuenta) y **subtítulos** que van
+con ella, porque mucha gente los ve sin sonido. 30-40 s, con aire entre frases.
+
 1. **Guion** en `src/videos/<id>/guion.md` (`<id>` = fecha y nombre:
    `2026-10-24-carton-vs-fiddle`). Si la idea está en `ideas/`, se parte de su ficha.
-   Lleva: a quién va, lo que tiene que quedar en una frase, la opción (flat / 3d),
-   el gancho, las escenas con sus segundos y el texto EXACTO de cada pantalla.
-   **Se enseña en 5-8 líneas y se espera el visto bueno** antes de programar (rehacer
-   un guion cuesta poco; rehacer un vídeo, mucho), salvo que hayan dicho «hazlo».
-2. **Código** en `src/videos/<id>/index.tsx` y una entrada en `VIDEOS`
-   (`src/videos/index.ts`). Se arma con las piezas de `comun/`, `flat/` y `3d/`. Lo que
-   haga falta y pueda servir otra vez va al kit (no dentro del vídeo) y al muestrario.
+   Lleva: a quién va, lo que tiene que quedar en una frase, la opción (flat / 3d) y una
+   tabla frase → lo que se ve. **Se enseña en 5-8 líneas y se espera el visto bueno**
+   antes de programar, salvo que hayan dicho «hazlo».
+2. **La voz**: `src/videos/<id>/locucion.json` con la voz (`alvaro` o `brian`, ver
+   `scripts/voces/elegidas.json`), la velocidad y las frases (`id`, `texto`, `pausa`
+   después; «|» = pausa corta). «fiddle» se escribe así: la voz lo dice «fídel» sola
+   (`scripts/voces/pronunciacion.json`). Se locuta con Azure:
+   `node scripts/voces/locutar.mjs <id>` con `AZURE_SPEECH_KEY` y `AZURE_SPEECH_REGION`
+   en el entorno, o en GitHub con el workflow «Locutar» (usa los secretos). Sale el
+   audio (`public/voz/<id>/`) y `tiempos.json`, y se suben al repo. Mirar lo que dura:
+   si pasa de ~40 s, recortar texto o subir la velocidad, y volver a locutar.
+3. **Código** en `src/videos/<id>/index.tsx` y una entrada en `VIDEOS`
+   (`src/videos/index.ts`). `const h = crearHorario(guion, tiempos)` y TODO se coloca
+   con él: cada escena en una `<Ventana desde={h.en("frase")} hasta={h.en("siguiente")}>`
+   y cada golpe en su palabra (`h.palabra("gancho", "nunca")`). `<Locucion horario={h}/>`
+   suena y `<Subtitulos horario={h}/>` escribe. Lo de cada escena va en `<ZonaEscena>`
+   (no pisa los subtítulos). Se arma con las piezas de `comun/`, `flat/` y `3d/`; lo que
+   pueda servir otra vez va al kit, no dentro del vídeo. Ver los cinco del 24-10-2026.
 3. **Revisar mirando**: stills en los momentos clave (el gancho a 1 s, cada escena, el
    cierre), a media escala, y leerlos:
    `npx remotion still <id> out/<id>-30.png --frame=30 --scale=0.5`.

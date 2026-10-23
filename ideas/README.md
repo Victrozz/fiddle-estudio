@@ -8,11 +8,11 @@ verdad se escribe al hacerlo (ver `.claude/skills/video/SKILL.md`).
 
 | Idea | Opción sugerida | Estado |
 | --- | --- | --- |
-| [El cartón contra fiddle](carton-vs-fiddle.md) | flat | por hacer |
-| [Igual de rápido, y con todo esto](igual-de-rapido.md) | flat (con la caja de verdad) | por hacer |
-| [Quién vuelve: dos finales](quien-vuelve.md) | 3d + flat encima | por hacer |
-| [Tu tarjeta, con tu cara](disena-tu-tarjeta.md) | flat | por hacer |
-| [Regalar sale a cuenta](regalar-sale-a-cuenta.md) | flat | por hacer |
+| [El cartón contra fiddle](carton-vs-fiddle.md) | flat | [hecho](https://github.com/Victrozz/fiddle-estudio/releases/tag/2026-10-24-carton-vs-fiddle) |
+| [Igual de rápido, y con todo esto](igual-de-rapido.md) | flat (con la caja de verdad) | [hecho](https://github.com/Victrozz/fiddle-estudio/releases/tag/2026-10-24-igual-de-rapido) · cronometrar antes de publicar |
+| [Quién vuelve: dos finales](quien-vuelve.md) | 3d + flat encima | [hecho](https://github.com/Victrozz/fiddle-estudio/releases/tag/2026-10-24-quien-vuelve) |
+| [Tu tarjeta, con tu cara](disena-tu-tarjeta.md) | flat | [hecho](https://github.com/Victrozz/fiddle-estudio/releases/tag/2026-10-24-tu-tarjeta) |
+| [Regalar sale a cuenta](regalar-sale-a-cuenta.md) | flat | [hecho](https://github.com/Victrozz/fiddle-estudio/releases/tag/2026-10-24-regalar-sale-a-cuenta) |
 
 ## En la recámara
 
