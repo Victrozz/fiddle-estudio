@@ -82,5 +82,5 @@ que le iría mejor a SU idea) y se espera la respuesta:
 
 - Revisar con stills a escala 0.5, nunca con el render entero.
 - Cambios pequeños con Edit, no reescribir el fichero.
-- En 3D, reutilizar `Cafeteria`, `Barrio` y `Persona`; no modelar de cero. Escenas 3D
-  de 20 s como mucho (el render en GitHub va por software).
+- En 3D, reutilizar `Cafeteria`, `Barrio` y `Persona`; no modelar de cero. El render
+  en GitHub va por software: 14 s de 3D tardan unos 6 min (el flat, 1 min).
