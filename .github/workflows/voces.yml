@@ -1,6 +1,9 @@
 # Prueba de voces gratis: la misma frase con cada voz, para elegir de oído. Todo en
-# GitHub (los modelos pesan varios GB: en el ordenador no caben). Deja los WAV en la
-# Release «Prueba-de-voces». Se lanza a mano: Actions → Probar voces.
+# GitHub (los modelos pesan varios GB: en el ordenador no caben). Deja los WAV en una
+# Release. Se lanza a mano: Actions → Probar voces.
+#
+# Ronda 1 (Prueba-de-voces): Kokoro y Chatterbox con sus voces → sonaban a Sudamérica.
+# Ronda 2 (Prueba-de-voces-2): Piper (voces de España) y Chatterbox copiando su acento.
 
 name: Probar voces
 
@@ -10,12 +13,19 @@ on:
       texto:
         description: "La frase que dicen todas"
         default: "¿Sabes cuántos clientes no han vuelto este mes? Con fiddle lo ves en el móvil, y les avisas con un toque."
+      release:
+        description: "La Release donde se dejan"
+        default: "Prueba-de-voces-2"
+      exageracion:
+        description: "Chatterbox: lo expresiva que sale (0,5 de serie; más bajo, más tranquila)"
+        default: "0.4"
 
 permissions:
   contents: write
 
 env:
   TEXTO: ${{ inputs.texto }}
+  RELEASE: ${{ inputs.release }}
 
 jobs:
   kokoro:
@@ -32,13 +42,31 @@ jobs:
           pip install -q torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           pip install -q "kokoro==0.9.4" soundfile
       - run: python scripts/voces/con_kokoro.py
+        env:
+          KOKORO_VOCES: em_santa
       - uses: actions/upload-artifact@v4
         with:
           name: voces-kokoro
           path: out/voces/
 
+  piper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q "piper-tts==1.8.0"
+      - run: python scripts/voces/con_piper.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voces-piper
+          path: out/voces/
+
   chatterbox:
-    needs: kokoro
+    needs: [kokoro, piper]
+    if: always()
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -48,20 +76,24 @@ jobs:
           python-version: "3.11"
       - uses: actions/download-artifact@v4
         with:
-          name: voces-kokoro
+          pattern: voces-*
+          merge-multiple: true
           path: out/voces/
       - run: |
           pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
           pip install -q chatterbox-tts==0.1.7
       - run: python scripts/voces/con_chatterbox.py
+        env:
+          MUESTRAS: como-santa=out/voces/kokoro-em_santa.wav,como-davefx=out/voces/piper-davefx.wav,como-sharvard-mujer=out/voces/piper-sharvard-mujer.wav
+          EXAGERACION: ${{ inputs.exageracion }}
       - uses: actions/upload-artifact@v4
         with:
           name: voces-chatterbox
           path: out/voces/chatterbox-*.wav
 
   publicar:
-    needs: [kokoro, chatterbox]
-    if: always() && needs.kokoro.result == 'success'
+    needs: [kokoro, piper, chatterbox]
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
@@ -74,11 +106,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
+          [[ "$RELEASE" =~ ^[A-Za-z0-9-]+$ ]] || { echo "Nombre de Release raro: $RELEASE"; exit 1; }
           ls -la voces/
-          NOTAS="Prueba de voces gratis. La frase: «$TEXTO». kokoro-* son las voces de serie de Kokoro; chatterbox-* son de Chatterbox (de serie, o con la voz de una de Kokoro). Ninguna es de una persona."
-          if gh release view Prueba-de-voces > /dev/null 2>&1; then
-            gh release upload Prueba-de-voces voces/*.wav --clobber
-            gh release edit Prueba-de-voces --notes "$NOTAS"
+          NOTAS="Prueba de voces gratis. La frase: «$TEXTO». piper-*: voces entrenadas con gente de España. kokoro-em_santa: la de Kokoro con acento de España. chatterbox-como-*: Chatterbox copiando la voz y el acento de esas. Ninguna es de una persona."
+          if gh release view "$RELEASE" > /dev/null 2>&1; then
+            gh release upload "$RELEASE" voces/*.wav --clobber
+            gh release edit "$RELEASE" --notes "$NOTAS"
           else
-            gh release create Prueba-de-voces voces/*.wav --title "Prueba de voces" --notes "$NOTAS" --prerelease
+            gh release create "$RELEASE" voces/*.wav --title "$RELEASE" --notes "$NOTAS" --prerelease
           fi

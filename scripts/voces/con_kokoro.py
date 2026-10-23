@@ -1,9 +1,10 @@
 # (No se llama kokoro.py: Python cogería este fichero en vez de la librería.)
 # Kokoro (licencia Apache 2.0): voces sintéticas que vienen con el modelo, de nadie.
 # Pequeño (82 M de parámetros): va rápido sin tarjeta gráfica. Para español usa
-# espeak-ng para saber cómo se pronuncia cada palabra.
+# espeak-ng para saber cómo se pronuncia cada palabra. De sus tres voces españolas,
+# solo em_santa suena a España (las otras, a Sudamérica).
 #
-# Saca la frase de TEXTO con cada voz española en out/voces/kokoro-<voz>.wav.
+# Saca la frase de TEXTO con cada voz de KOKORO_VOCES en out/voces/kokoro-<voz>.wav.
 
 import os
 
@@ -12,7 +13,7 @@ import soundfile as sf
 from kokoro import KPipeline
 
 TEXTO = os.environ["TEXTO"]
-VOCES = ["ef_dora", "em_alex", "em_santa"]
+VOCES = os.environ.get("KOKORO_VOCES", "em_santa").split(",")
 
 os.makedirs("out/voces", exist_ok=True)
 pipeline = KPipeline(lang_code="e")  # «e» = español
