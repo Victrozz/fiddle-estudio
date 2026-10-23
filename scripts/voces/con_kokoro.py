@@ -1,3 +1,4 @@
+# (No se llama kokoro.py: Python cogería este fichero en vez de la librería.)
 # Kokoro (licencia Apache 2.0): voces sintéticas que vienen con el modelo, de nadie.
 # Pequeño (82 M de parámetros): va rápido sin tarjeta gráfica. Para español usa
 # espeak-ng para saber cómo se pronuncia cada palabra.
