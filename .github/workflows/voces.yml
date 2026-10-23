@@ -1,0 +1,84 @@
+# Prueba de voces gratis: la misma frase con cada voz, para elegir de oído. Todo en
+# GitHub (los modelos pesan varios GB: en el ordenador no caben). Deja los WAV en la
+# Release «Prueba-de-voces». Se lanza a mano: Actions → Probar voces.
+
+name: Probar voces
+
+on:
+  workflow_dispatch:
+    inputs:
+      texto:
+        description: "La frase que dicen todas"
+        default: "¿Sabes cuántos clientes no han vuelto este mes? Con fiddle lo ves en el móvil, y les avisas con un toque."
+
+permissions:
+  contents: write
+
+env:
+  TEXTO: ${{ inputs.texto }}
+
+jobs:
+  kokoro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: sudo apt-get update -q && sudo apt-get install -y -q espeak-ng
+      # torch sin CUDA: aquí no hay tarjeta gráfica y la versión con CUDA pesa 2 GB más.
+      - run: |
+          pip install -q torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q "kokoro==0.9.4" soundfile
+      - run: python scripts/voces/kokoro.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voces-kokoro
+          path: out/voces/
+
+  chatterbox:
+    needs: kokoro
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/download-artifact@v4
+        with:
+          name: voces-kokoro
+          path: out/voces/
+      - run: |
+          pip install -q torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -q chatterbox-tts==0.1.7
+      - run: python scripts/voces/chatterbox.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voces-chatterbox
+          path: out/voces/chatterbox-*.wav
+
+  publicar:
+    needs: [kokoro, chatterbox]
+    if: always() && needs.kokoro.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: voces-*
+          merge-multiple: true
+          path: voces/
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          ls -la voces/
+          NOTAS="Prueba de voces gratis. La frase: «$TEXTO». kokoro-* son las voces de serie de Kokoro; chatterbox-* son de Chatterbox (de serie, o con la voz de una de Kokoro). Ninguna es de una persona."
+          if gh release view Prueba-de-voces > /dev/null 2>&1; then
+            gh release upload Prueba-de-voces voces/*.wav --clobber
+            gh release edit Prueba-de-voces --notes "$NOTAS"
+          else
+            gh release create Prueba-de-voces voces/*.wav --title "Prueba de voces" --notes "$NOTAS" --prerelease
+          fi
