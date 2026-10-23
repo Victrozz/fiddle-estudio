@@ -22,5 +22,7 @@ for nombre, muestra in MUESTRAS.items():
         print(f"Sin la muestra {muestra}: me salto {nombre}")
         continue
     wav = modelo.generate(TEXTO, language_id="es", audio_prompt_path=muestra, exaggeration=EXAGERACION)
+    # Sale a veces por encima de 1 (y cruje al reproducirlo): pico a 0,95.
+    wav = wav * (0.95 / wav.abs().max())
     torchaudio.save(f"out/voces/chatterbox-{nombre}.wav", wav, modelo.sr)
     print(f"out/voces/chatterbox-{nombre}.wav")
