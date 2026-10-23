@@ -13,14 +13,18 @@ import wave
 
 from piper import PiperVoice, SynthesisConfig
 
-TEXTO = os.environ["TEXTO"]
+from texto import para_voz
+
+TEXTO = para_voz(os.environ["TEXTO"])
 BASE = "https://huggingface.co/rhasspy/piper-voices/resolve/main/es/es_ES"
-VOCES = {
+TODAS = {
     "davefx": ("davefx/medium/es_ES-davefx-medium", None),
     "sharvard-mujer": ("sharvard/medium/es_ES-sharvard-medium", 1),
     "sharvard-hombre": ("sharvard/medium/es_ES-sharvard-medium", 0),
     "carlfm": ("carlfm/x_low/es_ES-carlfm-x_low", None),
 }
+# PIPER_VOCES: cuáles sacar (todas si no se dice).
+VOCES = {k: TODAS[k] for k in os.environ.get("PIPER_VOCES", ",".join(TODAS)).split(",")}
 
 os.makedirs("out/voces", exist_ok=True)
 os.makedirs("modelos", exist_ok=True)

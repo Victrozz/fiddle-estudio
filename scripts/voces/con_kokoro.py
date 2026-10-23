@@ -12,7 +12,9 @@ import numpy as np
 import soundfile as sf
 from kokoro import KPipeline
 
-TEXTO = os.environ["TEXTO"]
+from texto import para_voz
+
+TEXTO = para_voz(os.environ["TEXTO"])
 VOCES = os.environ.get("KOKORO_VOCES", "em_santa").split(",")
 
 os.makedirs("out/voces", exist_ok=True)
