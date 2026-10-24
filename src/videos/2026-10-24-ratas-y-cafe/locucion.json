@@ -1,0 +1,15 @@
+{
+  "voz": "brian",
+  "velocidad": "+18%",
+  "pausaCorta": 150,
+  "lineas": [
+    {"id": "gancho", "texto": "En los años treinta, un psicólogo puso ratas en un pasillo | con comida al final.", "pausa": 0.3},
+    {"id": "corren", "texto": "Y vio algo curioso: | cuanto más cerca estaban de la comida, | más rápido corrían.", "pausa": 0.3},
+    {"id": "nombre", "texto": "Lo llamó gradiente de meta.", "pausa": 0.45},
+    {"id": "cafe", "texto": "Setenta años después, en una cafetería de Nueva York, | lo probaron con personas | y una cartilla de diez cafés.", "pausa": 0.3},
+    {"id": "igual", "texto": "Pasó lo mismo. | Cuanto más llena la cartilla, | antes volvían a por el siguiente.", "pausa": 0.3},
+    {"id": "cifra", "texto": "Del primer café al último, | la espera se acortaba un veinte por ciento.", "pausa": 0.4},
+    {"id": "reinicio", "texto": "Y al canjear el gratis… | vuelta a empezar, | despacio.", "pausa": 0.45},
+    {"id": "remate", "texto": "No era por el café. | Era por la meta. | Tú también corres hacia el queso."}
+  ]
+}

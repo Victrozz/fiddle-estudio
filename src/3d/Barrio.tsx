@@ -13,6 +13,8 @@ import type { V3 } from "./camara";
 //
 // Para mover gente por las calles, `disposicionBarrio()` da los cruces y la
 // puerta de la cafetería con las MISMAS medidas con que se dibuja.
+// `otros`: más cafeterías (la competencia), cada una con su toldo; su puerta, con
+// `puertaDe(i, j)` y `frentePuertaDe(i, j)`.
 // ============================================================================
 
 // Casas bajas y calles anchas a propósito: lo que importa es la gente que va por
@@ -22,36 +24,47 @@ const CALLE = 2.2;
 const PASO = MANZANA + CALLE;
 const ACERA = 0.12;
 
-type Opciones = { columnas?: number; filas?: number; cafe?: [number, number]; semilla?: string };
+type Otro = { manzana: [number, number]; toldo: string };
+type Opciones = { columnas?: number; filas?: number; cafe?: [number, number]; otros?: Otro[]; semilla?: string };
 
 export function disposicionBarrio({ columnas = 4, filas = 6, cafe = [1, 3] }: Opciones = {}) {
   const centro = (i: number, j: number): V3 => [(i + 0.5 - columnas / 2) * PASO, 0, (j + 0.5 - filas / 2) * PASO];
   /** El cruce de calles en la esquina (i, j), con i de 0 a columnas y j de 0 a filas. */
   const cruce = (i: number, j: number): V3 => [(i - columnas / 2) * PASO, 0, (j - filas / 2) * PASO];
-  const [cx, , cz] = centro(cafe[0], cafe[1]);
+  /** En el bordillo, delante de la puerta de la cafetería de la manzana (i, j). */
+  const puertaDe = (i: number, j: number): V3 => {
+    const [x, , z] = centro(i, j);
+    return [x + MANZANA / 4 + 0.3, 0, z + MANZANA / 2 + 0.2];
+  };
+  /** En medio de la calle, frente a esa puerta (para llegar andando por la calle). */
+  const frentePuertaDe = (i: number, j: number): V3 => {
+    const [x, , z] = centro(i, j);
+    return [x + MANZANA / 4 + 0.3, 0, z + PASO / 2];
+  };
   return {
     columnas,
     filas,
     cafe,
     centro,
     cruce,
-    /** En el bordillo, delante de la puerta de la cafetería. */
-    puerta: [cx + MANZANA / 4 + 0.3, 0, cz + MANZANA / 2 + 0.2] as V3,
-    /** En medio de la calle, frente a la puerta (para llegar andando por la calle). */
-    frentePuerta: [cx + MANZANA / 4 + 0.3, 0, cz + PASO / 2] as V3,
+    puertaDe,
+    frentePuertaDe,
+    puerta: puertaDe(cafe[0], cafe[1]),
+    frentePuerta: frentePuertaDe(cafe[0], cafe[1]),
     ancho: columnas * PASO + CALLE,
     fondo: filas * PASO + CALLE,
   };
 }
 
-export const Barrio: React.FC<Opciones & { children?: React.ReactNode }> = ({ semilla = "barrio", children, ...op }) => {
+export const Barrio: React.FC<Opciones & { children?: React.ReactNode }> = ({ semilla = "barrio", otros = [], children, ...op }) => {
   const b = disposicionBarrio(op);
+  const hayCafe = (i: number, j: number) => (i === b.cafe[0] && j === b.cafe[1]) || otros.some((o) => o.manzana[0] === i && o.manzana[1] === j);
   const casas = useMemo(() => {
     const lista: { en: V3; tam: V3; fachada: string; tejado: string }[] = [];
     for (let i = 0; i < b.columnas; i++)
       for (let j = 0; j < b.filas; j++)
         for (const [qx, qz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) {
-          const esCafe = i === b.cafe[0] && j === b.cafe[1] && qx === 1 && qz === 1;
+          const esCafe = hayCafe(i, j) && qx === 1 && qz === 1;
           const s = `${semilla}-${i}-${j}-${qx}-${qz}`;
           if (esCafe || random(`${s}-hay`) < 0.2) continue;
           const [cx, , cz] = b.centro(i, j);
@@ -65,10 +78,7 @@ export const Barrio: React.FC<Opciones & { children?: React.ReactNode }> = ({ se
           });
         }
     return lista;
-  }, [b.columnas, b.filas, b.cafe, semilla]);
-
-  const [kx, , kz] = b.centro(b.cafe[0], b.cafe[1]);
-  const cafe: V3 = [kx + MANZANA / 4, ACERA, kz + MANZANA / 4];
+  }, [b.columnas, b.filas, b.cafe, semilla, JSON.stringify(otros)]);
 
   return (
     <group>
@@ -98,14 +108,27 @@ export const Barrio: React.FC<Opciones & { children?: React.ReactNode }> = ({ se
         ));
       })}
 
-      {/* la cafetería: crema, con su toldo y su rótulo verdes */}
-      <Bloque tam={[1.8, 1.3, 1.8]} en={cafe} color={COLOR.pared} radio={0.06} />
-      <Bloque tam={[1.82, 0.1, 1.82]} en={[cafe[0], cafe[1] + 1.3, cafe[2]]} color={COLOR.base} radio={0.03} />
-      <Bloque tam={[1.6, 0.08, 0.55]} en={[cafe[0], cafe[1] + 0.92, cafe[2] + 1.1]} giro={[0.35, 0, 0]} color={COLOR.base} radio={0.02} />
-      <Bloque tam={[0.55, 0.85, 0.04]} en={[cafe[0] + 0.3, cafe[1], cafe[2] + 0.91]} color={COLOR.metalOscuro} radio={0.02} sombra={false} />
-      <Bloque tam={[0.6, 0.55, 0.04]} en={[cafe[0] - 0.42, cafe[1] + 0.25, cafe[2] + 0.91]} color={COLOR.cristal} brillo="#5d7a74" radio={0.02} sombra={false} />
+      {/* la cafetería: crema, con su toldo y su rótulo verdes; las otras, con el suyo */}
+      <Cafe en={b.centro(b.cafe[0], b.cafe[1])} toldo={COLOR.base} />
+      {otros.map((o) => (
+        <Cafe key={o.manzana.join()} en={b.centro(o.manzana[0], o.manzana[1])} toldo={o.toldo} />
+      ))}
 
       {children}
+    </group>
+  );
+};
+
+/** Una cafetería pequeña en la esquina de su manzana (`en` = el centro de la manzana). */
+const Cafe: React.FC<{ en: V3; toldo: string }> = ({ en, toldo }) => {
+  const cafe: V3 = [en[0] + MANZANA / 4, ACERA, en[2] + MANZANA / 4];
+  return (
+    <group>
+      <Bloque tam={[1.8, 1.3, 1.8]} en={cafe} color={COLOR.pared} radio={0.06} />
+      <Bloque tam={[1.82, 0.1, 1.82]} en={[cafe[0], cafe[1] + 1.3, cafe[2]]} color={toldo} radio={0.03} />
+      <Bloque tam={[1.6, 0.08, 0.55]} en={[cafe[0], cafe[1] + 0.92, cafe[2] + 1.1]} giro={[0.35, 0, 0]} color={toldo} radio={0.02} />
+      <Bloque tam={[0.55, 0.85, 0.04]} en={[cafe[0] + 0.3, cafe[1], cafe[2] + 0.91]} color={COLOR.metalOscuro} radio={0.02} sombra={false} />
+      <Bloque tam={[0.6, 0.55, 0.04]} en={[cafe[0] - 0.42, cafe[1] + 0.25, cafe[2] + 0.91]} color={COLOR.cristal} brillo="#5d7a74" radio={0.02} sombra={false} />
     </group>
   );
 };

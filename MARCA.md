@@ -49,7 +49,9 @@ paleta, para enseñar la variedad. La de una tienda real, solo con su permiso.
 - Lo que suma la caja son **puntos** («Añadir punto», «Te falta 1 punto»), nunca sellos.
   «Sello» es lo de la cartilla de cartón.
 - Sin emojis: iconos de trazo (los de la app).
-- Le hablamos al dueño de la tienda de lo que gana su tienda.
+- Desde el 24-10-2026, contenido y no anuncios: contamos algo curioso (un estudio, un
+  trozo de historia) y fiddle solo firma al final, con el logo. Sirve a cualquiera y, de
+  paso, al dueño de una tienda.
 
 ## Botones de Wallet
 
@@ -64,6 +66,10 @@ Microsoft Azure; `scripts/voces/elegidas.json`):
 - **Álvaro** (`es-ES-AlvaroNeural`): hombre, de España, clara y de anuncio. La de partida.
 - **Brian** (`en-US-BrianMultilingualNeural`): más cercana y de conversación, hablando
   español de España.
+
+Sin prisa pero sin arrastrarse: Álvaro a +22 %, Brian a +18 %, pausas cortas de 150 ms y
+de 0,25-0,45 s entre frases (unas 3 palabras por segundo). Las frases se cortan en su
+última palabra: el silencio que Azure deja al final de cada audio no cuenta.
 
 «fiddle» se dice **«fídel»** (`scripts/voces/pronunciacion.json`); se escribe siempre
 «fiddle», en minúscula.

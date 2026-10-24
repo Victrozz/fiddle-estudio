@@ -1,0 +1,16 @@
+{
+  "voz": "brian",
+  "velocidad": "+18%",
+  "pausaCorta": 150,
+  "lineas": [
+    {"id": "gancho", "texto": "Las cafeterías con sillas tienen un truco | que las de para llevar no tienen.", "pausa": 0.3},
+    {"id": "sitio", "texto": "La gente vuelve por el sitio: | su mesa, | su rincón, | su camarero.", "pausa": 0.25},
+    {"id": "tercer", "texto": "El sociólogo Ray Oldenburg lo llamó el tercer lugar: | ni casa, | ni trabajo.", "pausa": 0.45},
+    {"id": "llevar", "texto": "Pero en una de café para llevar, nadie se sienta. | Pides, | pagas | y te vas.", "pausa": 0.3},
+    {"id": "calle", "texto": "Y de camino al trabajo | pasas por tres más.", "pausa": 0.25},
+    {"id": "cambiar", "texto": "Cambiar no te cuesta nada: | hoy esta, | mañana la otra.", "pausa": 0.4},
+    {"id": "habito", "texto": "Solo te ata la costumbre. | Y casi la mitad de lo que hacemos cada día | es costumbre.", "pausa": 0.4},
+    {"id": "tarjeta", "texto": "Una cartilla a medias | convierte «la que pille» | en «la mía».", "pausa": 0.45},
+    {"id": "remate", "texto": "Si no tienes sillas, | dales otra cosa a la que volver."}
+  ]
+}

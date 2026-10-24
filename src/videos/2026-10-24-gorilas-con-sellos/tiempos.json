@@ -1,0 +1,614 @@
+{
+ "voz": "en-US-BrianMultilingualNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-gorilas-con-sellos/01-gancho.mp3",
+   "ms": 6737,
+   "palabras": [
+    {
+     "texto": "Cuentan",
+     "ms": 74,
+     "dur": 392
+    },
+    {
+     "texto": "que",
+     "ms": 477,
+     "dur": 106
+    },
+    {
+     "texto": "un",
+     "ms": 593,
+     "dur": 117
+    },
+    {
+     "texto": "colegio",
+     "ms": 720,
+     "dur": 360
+    },
+    {
+     "texto": "de",
+     "ms": 1091,
+     "dur": 85
+    },
+    {
+     "texto": "Pensilvania",
+     "ms": 1186,
+     "dur": 667
+    },
+    {
+     "texto": "juntó",
+     "ms": 1864,
+     "dur": 350
+    },
+    {
+     "texto": "cinco",
+     "ms": 2225,
+     "dur": 297
+    },
+    {
+     "texto": "millones",
+     "ms": 2532,
+     "dur": 434
+    },
+    {
+     "texto": "de",
+     "ms": 2977,
+     "dur": 85
+    },
+    {
+     "texto": "sellos",
+     "ms": 3072,
+     "dur": 350
+    },
+    {
+     "texto": "del",
+     "ms": 3432,
+     "dur": 138
+    },
+    {
+     "texto": "súper…",
+     "ms": 3581,
+     "dur": 434
+    },
+    {
+     "texto": "para",
+     "ms": 4504,
+     "dur": 170
+    },
+    {
+     "texto": "comprarle",
+     "ms": 4684,
+     "dur": 551
+    },
+    {
+     "texto": "dos",
+     "ms": 5245,
+     "dur": 212
+    },
+    {
+     "texto": "gorilas",
+     "ms": 5468,
+     "dur": 445
+    },
+    {
+     "texto": "al",
+     "ms": 5923,
+     "dur": 117
+    },
+    {
+     "texto": "zoo.",
+     "ms": 6050,
+     "dur": 424
+    }
+   ]
+  },
+  {
+   "id": "quees",
+   "audio": "voz/2026-10-24-gorilas-con-sellos/02-quees.mp3",
+   "ms": 5694,
+   "palabras": [
+    {
+     "texto": "Eran",
+     "ms": 74,
+     "dur": 286
+    },
+    {
+     "texto": "los",
+     "ms": 371,
+     "dur": 180
+    },
+    {
+     "texto": "Green",
+     "ms": 561,
+     "dur": 233
+    },
+    {
+     "texto": "Stamps:",
+     "ms": 805,
+     "dur": 808
+    },
+    {
+     "texto": "desde",
+     "ms": 1559,
+     "dur": 307
+    },
+    {
+     "texto": "mil",
+     "ms": 1877,
+     "dur": 180
+    },
+    {
+     "texto": "ochocientos",
+     "ms": 2067,
+     "dur": 572
+    },
+    {
+     "texto": "noventa",
+     "ms": 2650,
+     "dur": 350
+    },
+    {
+     "texto": "y",
+     "ms": 3010,
+     "dur": 53
+    },
+    {
+     "texto": "seis,",
+     "ms": 3074,
+     "dur": 756
+    },
+    {
+     "texto": "te",
+     "ms": 3669,
+     "dur": 64
+    },
+    {
+     "texto": "los",
+     "ms": 3743,
+     "dur": 170
+    },
+    {
+     "texto": "daban",
+     "ms": 3923,
+     "dur": 275
+    },
+    {
+     "texto": "en",
+     "ms": 4209,
+     "dur": 95
+    },
+    {
+     "texto": "las",
+     "ms": 4315,
+     "dur": 180
+    },
+    {
+     "texto": "tiendas",
+     "ms": 4506,
+     "dur": 403
+    },
+    {
+     "texto": "al",
+     "ms": 4919,
+     "dur": 85
+    },
+    {
+     "texto": "pagar.",
+     "ms": 5014,
+     "dur": 424
+    }
+   ]
+  },
+  {
+   "id": "libreta",
+   "audio": "voz/2026-10-24-gorilas-con-sellos/03-libreta.mp3",
+   "ms": 8306,
+   "palabras": [
+    {
+     "texto": "Los",
+     "ms": 85,
+     "dur": 244
+    },
+    {
+     "texto": "lamías,",
+     "ms": 339,
+     "dur": 749
+    },
+    {
+     "texto": "los",
+     "ms": 1114,
+     "dur": 233
+    },
+    {
+     "texto": "pegabas",
+     "ms": 1358,
+     "dur": 477
+    },
+    {
+     "texto": "en",
+     "ms": 1845,
+     "dur": 117
+    },
+    {
+     "texto": "una",
+     "ms": 1972,
+     "dur": 159
+    },
+    {
+     "texto": "libreta",
+     "ms": 2142,
+     "dur": 855
+    },
+    {
+     "texto": "y,",
+     "ms": 2895,
+     "dur": 148
+    },
+    {
+     "texto": "con",
+     "ms": 3404,
+     "dur": 170
+    },
+    {
+     "texto": "libretas",
+     "ms": 3584,
+     "dur": 434
+    },
+    {
+     "texto": "llenas,",
+     "ms": 4029,
+     "dur": 762
+    },
+    {
+     "texto": "te",
+     "ms": 4677,
+     "dur": 95
+    },
+    {
+     "texto": "llevabas",
+     "ms": 4783,
+     "dur": 1437
+    },
+    {
+     "texto": "una",
+     "ms": 5249,
+     "dur": 971
+    },
+    {
+     "texto": "vajilla,",
+     "ms": 5408,
+     "dur": 812
+    },
+    {
+     "texto": "una",
+     "ms": 6161,
+     "dur": 868
+    },
+    {
+     "texto": "radio",
+     "ms": 6395,
+     "dur": 635
+    },
+    {
+     "texto": "o",
+     "ms": 7074,
+     "dur": 117
+    },
+    {
+     "texto": "hasta",
+     "ms": 7201,
+     "dur": 254
+    },
+    {
+     "texto": "muebles.",
+     "ms": 7466,
+     "dur": 593
+    }
+   ]
+  },
+  {
+   "id": "pico",
+   "audio": "voz/2026-10-24-gorilas-con-sellos/04-pico.mp3",
+   "ms": 5524,
+   "palabras": [
+    {
+     "texto": "En",
+     "ms": 85,
+     "dur": 138
+    },
+    {
+     "texto": "los",
+     "ms": 233,
+     "dur": 138
+    },
+    {
+     "texto": "sesenta,",
+     "ms": 381,
+     "dur": 487
+    },
+    {
+     "texto": "la",
+     "ms": 1176,
+     "dur": 85
+    },
+    {
+     "texto": "empresa",
+     "ms": 1271,
+     "dur": 392
+    },
+    {
+     "texto": "presumía",
+     "ms": 1674,
+     "dur": 466
+    },
+    {
+     "texto": "de",
+     "ms": 2150,
+     "dur": 85
+    },
+    {
+     "texto": "imprimir",
+     "ms": 2246,
+     "dur": 424
+    },
+    {
+     "texto": "más",
+     "ms": 2680,
+     "dur": 180
+    },
+    {
+     "texto": "sellos",
+     "ms": 2871,
+     "dur": 1129
+    },
+    {
+     "texto": "que",
+     "ms": 3572,
+     "dur": 95
+    },
+    {
+     "texto": "Correos",
+     "ms": 3678,
+     "dur": 445
+    },
+    {
+     "texto": "de",
+     "ms": 4133,
+     "dur": 106
+    },
+    {
+     "texto": "Estados",
+     "ms": 4250,
+     "dur": 445
+    },
+    {
+     "texto": "Unidos.",
+     "ms": 4705,
+     "dur": 561
+    }
+   ]
+  },
+  {
+   "id": "crisis",
+   "audio": "voz/2026-10-24-gorilas-con-sellos/05-crisis.mp3",
+   "ms": 6020,
+   "palabras": [
+    {
+     "texto": "Con",
+     "ms": 74,
+     "dur": 148
+    },
+    {
+     "texto": "la",
+     "ms": 233,
+     "dur": 106
+    },
+    {
+     "texto": "crisis",
+     "ms": 350,
+     "dur": 413
+    },
+    {
+     "texto": "de",
+     "ms": 773,
+     "dur": 85
+    },
+    {
+     "texto": "los",
+     "ms": 869,
+     "dur": 138
+    },
+    {
+     "texto": "setenta,",
+     "ms": 1017,
+     "dur": 551
+    },
+    {
+     "texto": "cada",
+     "ms": 1803,
+     "dur": 170
+    },
+    {
+     "texto": "vez",
+     "ms": 1983,
+     "dur": 233
+    },
+    {
+     "texto": "hacían",
+     "ms": 2226,
+     "dur": 360
+    },
+    {
+     "texto": "falta",
+     "ms": 2597,
+     "dur": 297
+    },
+    {
+     "texto": "más",
+     "ms": 2904,
+     "dur": 180
+    },
+    {
+     "texto": "sellos",
+     "ms": 3095,
+     "dur": 360
+    },
+    {
+     "texto": "para",
+     "ms": 3466,
+     "dur": 170
+    },
+    {
+     "texto": "menos",
+     "ms": 3646,
+     "dur": 275
+    },
+    {
+     "texto": "cosas,",
+     "ms": 3932,
+     "dur": 953
+    },
+    {
+     "texto": "y",
+     "ms": 4590,
+     "dur": 85
+    },
+    {
+     "texto": "la",
+     "ms": 4686,
+     "dur": 117
+    },
+    {
+     "texto": "gente",
+     "ms": 4813,
+     "dur": 328
+    },
+    {
+     "texto": "se",
+     "ms": 5152,
+     "dur": 117
+    },
+    {
+     "texto": "cansó.",
+     "ms": 5279,
+     "dur": 487
+    }
+   ]
+  },
+  {
+   "id": "hoy",
+   "audio": "voz/2026-10-24-gorilas-con-sellos/06-hoy.mp3",
+   "ms": 4109,
+   "palabras": [
+    {
+     "texto": "La",
+     "ms": 85,
+     "dur": 159
+    },
+    {
+     "texto": "idea",
+     "ms": 254,
+     "dur": 307
+    },
+    {
+     "texto": "sigue",
+     "ms": 572,
+     "dur": 297
+    },
+    {
+     "texto": "viva:",
+     "ms": 879,
+     "dur": 646
+    },
+    {
+     "texto": "un",
+     "ms": 1474,
+     "dur": 180
+    },
+    {
+     "texto": "premio",
+     "ms": 1665,
+     "dur": 297
+    },
+    {
+     "texto": "pequeño",
+     "ms": 1972,
+     "dur": 434
+    },
+    {
+     "texto": "por",
+     "ms": 2417,
+     "dur": 148
+    },
+    {
+     "texto": "volver",
+     "ms": 2576,
+     "dur": 328
+    },
+    {
+     "texto": "al",
+     "ms": 2915,
+     "dur": 117
+    },
+    {
+     "texto": "mismo",
+     "ms": 3042,
+     "dur": 297
+    },
+    {
+     "texto": "sitio.",
+     "ms": 3349,
+     "dur": 498
+    }
+   ]
+  },
+  {
+   "id": "remate",
+   "audio": "voz/2026-10-24-gorilas-con-sellos/07-remate.mp3",
+   "ms": 2712,
+   "palabras": [
+    {
+     "texto": "Solo",
+     "ms": 74,
+     "dur": 339
+    },
+    {
+     "texto": "que",
+     "ms": 424,
+     "dur": 138
+    },
+    {
+     "texto": "ahora",
+     "ms": 572,
+     "dur": 653
+    },
+    {
+     "texto": "no",
+     "ms": 1220,
+     "dur": 233
+    },
+    {
+     "texto": "hay",
+     "ms": 1464,
+     "dur": 148
+    },
+    {
+     "texto": "que",
+     "ms": 1622,
+     "dur": 106
+    },
+    {
+     "texto": "lamer",
+     "ms": 1739,
+     "dur": 286
+    },
+    {
+     "texto": "nada.",
+     "ms": 2036,
+     "dur": 413
+    }
+   ]
+  }
+ ]
+}

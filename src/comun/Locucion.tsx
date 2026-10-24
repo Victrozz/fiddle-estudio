@@ -43,15 +43,21 @@ const letras = (t: string) => t.toLowerCase().normalize("NFD").replace(/[^\p{L}\
  * `entrada`: segundos de silencio al empezar. `cola`: lo que dura el vídeo después
  * de la última frase (el cierre se queda en pantalla). Cada frase puede llevar
  * `antes` (más silencio antes) y `pausa` (silencio después) en locucion.json.
+ *
+ * Cada audio de Azure acaba con ~0,6 s de silencio: la frase se da por acabada en
+ * su última palabra, o entre frase y frase se oía un hueco de más (sonaba lento).
+ * `holgado` cuenta el audio entero, como los cinco primeros vídeos.
  */
-export function crearHorario(guion: Guion, tiempos: Tiempos, { entrada: inicio = 0.4, cola = 2 } = {}): Horario {
+export function crearHorario(guion: Guion, tiempos: Tiempos, { entrada: inicio = 0.4, cola = 2, holgado = false } = {}): Horario {
   let t = f(inicio * 1000);
   const lineas = guion.lineas.map((g) => {
     const tl = tiempos.lineas.find((x) => x.id === g.id);
     if (!tl) throw new Error(`La frase «${g.id}» no está en tiempos.json: hay que volver a locutar`);
     t += f((g.antes ?? 0) * 1000);
     const desde = t;
-    const hasta = desde + f(tl.ms);
+    const ultima = tl.palabras[tl.palabras.length - 1];
+    const habla = holgado || !ultima ? tl.ms : Math.min(tl.ms, ultima.ms + ultima.dur + 90);
+    const hasta = desde + f(habla);
     t = hasta + f((g.pausa ?? 0) * 1000);
     return { id: g.id, audio: tl.audio, desde, hasta, palabras: tl.palabras.map((p) => ({ texto: p.texto, desde: desde + f(p.ms), hasta: desde + f(p.ms + p.dur) })) };
   });

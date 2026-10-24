@@ -1,0 +1,14 @@
+{
+  "voz": "brian",
+  "velocidad": "+18%",
+  "pausaCorta": 150,
+  "lineas": [
+    {"id": "gancho", "texto": "Cuentan que un colegio de Pensilvania juntó cinco millones de sellos del súper… | para comprarle dos gorilas al zoo.", "pausa": 0.45},
+    {"id": "quees", "texto": "Eran los Green Stamps: | desde mil ochocientos noventa y seis, | te los daban en las tiendas al pagar.", "pausa": 0.3},
+    {"id": "libreta", "texto": "Los lamías, | los pegabas en una libreta | y, con libretas llenas, | te llevabas una vajilla, | una radio | o hasta muebles.", "pausa": 0.35},
+    {"id": "pico", "texto": "En los sesenta, la empresa presumía de imprimir más sellos | que Correos de Estados Unidos.", "pausa": 0.45},
+    {"id": "crisis", "texto": "Con la crisis de los setenta, | cada vez hacían falta más sellos para menos cosas, | y la gente se cansó.", "pausa": 0.45},
+    {"id": "hoy", "texto": "La idea sigue viva: | un premio pequeño por volver al mismo sitio.", "pausa": 0.35},
+    {"id": "remate", "texto": "Solo que ahora | no hay que lamer nada."}
+  ]
+}

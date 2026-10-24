@@ -1,0 +1,636 @@
+{
+ "voz": "es-ES-AlvaroNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/01-gancho.mp3",
+   "ms": 5138,
+   "palabras": [
+    {
+     "texto": "Dos",
+     "ms": 46,
+     "dur": 246
+    },
+    {
+     "texto": "cartillas",
+     "ms": 302,
+     "dur": 410
+    },
+    {
+     "texto": "de",
+     "ms": 722,
+     "dur": 72
+    },
+    {
+     "texto": "un",
+     "ms": 804,
+     "dur": 92
+    },
+    {
+     "texto": "lavadero",
+     "ms": 906,
+     "dur": 318
+    },
+    {
+     "texto": "de",
+     "ms": 1234,
+     "dur": 82
+    },
+    {
+     "texto": "coches.",
+     "ms": 1326,
+     "dur": 543
+    },
+    {
+     "texto": "Una",
+     "ms": 2731,
+     "dur": 236
+    },
+    {
+     "texto": "funcionó",
+     "ms": 2977,
+     "dur": 389
+    },
+    {
+     "texto": "casi",
+     "ms": 3376,
+     "dur": 256
+    },
+    {
+     "texto": "el",
+     "ms": 3643,
+     "dur": 72
+    },
+    {
+     "texto": "doble",
+     "ms": 3725,
+     "dur": 215
+    },
+    {
+     "texto": "que",
+     "ms": 3950,
+     "dur": 82
+    },
+    {
+     "texto": "la",
+     "ms": 4042,
+     "dur": 92
+    },
+    {
+     "texto": "otra.",
+     "ms": 4145,
+     "dur": 338
+    }
+   ]
+  },
+  {
+   "id": "vacia",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/02-vacia.mp3",
+   "ms": 3908,
+   "palabras": [
+    {
+     "texto": "A",
+     "ms": 46,
+     "dur": 133
+    },
+    {
+     "texto": "unos",
+     "ms": 189,
+     "dur": 215
+    },
+    {
+     "texto": "clientes",
+     "ms": 414,
+     "dur": 369
+    },
+    {
+     "texto": "les",
+     "ms": 793,
+     "dur": 133
+    },
+    {
+     "texto": "dieron",
+     "ms": 937,
+     "dur": 215
+    },
+    {
+     "texto": "esta:",
+     "ms": 1162,
+     "dur": 266
+    },
+    {
+     "texto": "ocho",
+     "ms": 1819,
+     "dur": 297
+    },
+    {
+     "texto": "casillas,",
+     "ms": 2126,
+     "dur": 482
+    },
+    {
+     "texto": "vacía.",
+     "ms": 2833,
+     "dur": 461
+    }
+   ]
+  },
+  {
+   "id": "regalo",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/03-regalo.mp3",
+   "ms": 4675,
+   "palabras": [
+    {
+     "texto": "A",
+     "ms": 50,
+     "dur": 154
+    },
+    {
+     "texto": "otros,",
+     "ms": 214,
+     "dur": 379
+    },
+    {
+     "texto": "esta:",
+     "ms": 839,
+     "dur": 287
+    },
+    {
+     "texto": "diez",
+     "ms": 1456,
+     "dur": 297
+    },
+    {
+     "texto": "casillas,",
+     "ms": 1763,
+     "dur": 893
+    },
+    {
+     "texto": "con",
+     "ms": 2614,
+     "dur": 225
+    },
+    {
+     "texto": "dos",
+     "ms": 2850,
+     "dur": 143
+    },
+    {
+     "texto": "ya",
+     "ms": 3004,
+     "dur": 102
+    },
+    {
+     "texto": "selladas",
+     "ms": 3116,
+     "dur": 328
+    },
+    {
+     "texto": "de",
+     "ms": 3455,
+     "dur": 61
+    },
+    {
+     "texto": "regalo.",
+     "ms": 3526,
+     "dur": 533
+    }
+   ]
+  },
+  {
+   "id": "igual",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/04-igual.mp3",
+   "ms": 2947,
+   "palabras": [
+    {
+     "texto": "En",
+     "ms": 50,
+     "dur": 164
+    },
+    {
+     "texto": "las",
+     "ms": 224,
+     "dur": 143
+    },
+    {
+     "texto": "dos,",
+     "ms": 378,
+     "dur": 225
+    },
+    {
+     "texto": "ocho",
+     "ms": 989,
+     "dur": 287
+    },
+    {
+     "texto": "lavados",
+     "ms": 1286,
+     "dur": 359
+    },
+    {
+     "texto": "hasta",
+     "ms": 1655,
+     "dur": 154
+    },
+    {
+     "texto": "el",
+     "ms": 1819,
+     "dur": 61
+    },
+    {
+     "texto": "premio.",
+     "ms": 1891,
+     "dur": 441
+    }
+   ]
+  },
+  {
+   "id": "meses",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/05-meses.mp3",
+   "ms": 6652,
+   "palabras": [
+    {
+     "texto": "Meses",
+     "ms": 50,
+     "dur": 369
+    },
+    {
+     "texto": "después,",
+     "ms": 429,
+     "dur": 400
+    },
+    {
+     "texto": "la",
+     "ms": 1034,
+     "dur": 72
+    },
+    {
+     "texto": "vacía",
+     "ms": 1116,
+     "dur": 266
+    },
+    {
+     "texto": "la",
+     "ms": 1392,
+     "dur": 61
+    },
+    {
+     "texto": "había",
+     "ms": 1464,
+     "dur": 174
+    },
+    {
+     "texto": "completado",
+     "ms": 1648,
+     "dur": 451
+    },
+    {
+     "texto": "el",
+     "ms": 2109,
+     "dur": 61
+    },
+    {
+     "texto": "diecinueve",
+     "ms": 2181,
+     "dur": 389
+    },
+    {
+     "texto": "por",
+     "ms": 2581,
+     "dur": 154
+    },
+    {
+     "texto": "ciento.",
+     "ms": 2745,
+     "dur": 430
+    },
+    {
+     "texto": "La",
+     "ms": 4032,
+     "dur": 1100
+    },
+    {
+     "texto": "del",
+     "ms": 4257,
+     "dur": 875
+    },
+    {
+     "texto": "regalo,",
+     "ms": 4411,
+     "dur": 721
+    },
+    {
+     "texto": "el",
+     "ms": 5100,
+     "dur": 184
+    },
+    {
+     "texto": "treinta",
+     "ms": 5294,
+     "dur": 225
+    },
+    {
+     "texto": "y",
+     "ms": 5530,
+     "dur": 41
+    },
+    {
+     "texto": "cuatro.",
+     "ms": 5581,
+     "dur": 441
+    }
+   ]
+  },
+  {
+   "id": "nombre",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/06-nombre.mp3",
+   "ms": 5220,
+   "palabras": [
+    {
+     "texto": "Es",
+     "ms": 50,
+     "dur": 215
+    },
+    {
+     "texto": "el",
+     "ms": 275,
+     "dur": 72
+    },
+    {
+     "texto": "efecto",
+     "ms": 357,
+     "dur": 277
+    },
+    {
+     "texto": "del",
+     "ms": 644,
+     "dur": 113
+    },
+    {
+     "texto": "progreso",
+     "ms": 767,
+     "dur": 348
+    },
+    {
+     "texto": "dotado:",
+     "ms": 1126,
+     "dur": 379
+    },
+    {
+     "texto": "lo",
+     "ms": 1825,
+     "dur": 195
+    },
+    {
+     "texto": "que",
+     "ms": 2030,
+     "dur": 92
+    },
+    {
+     "texto": "ya",
+     "ms": 2132,
+     "dur": 92
+    },
+    {
+     "texto": "está",
+     "ms": 2234,
+     "dur": 164
+    },
+    {
+     "texto": "empezado",
+     "ms": 2409,
+     "dur": 904
+    },
+    {
+     "texto": "nos",
+     "ms": 3194,
+     "dur": 256
+    },
+    {
+     "texto": "cuesta",
+     "ms": 3460,
+     "dur": 246
+    },
+    {
+     "texto": "dejarlo",
+     "ms": 3716,
+     "dur": 348
+    },
+    {
+     "texto": "a",
+     "ms": 4075,
+     "dur": 21
+    },
+    {
+     "texto": "medias.",
+     "ms": 4106,
+     "dur": 492
+    }
+   ]
+  },
+  {
+   "id": "cafe",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/07-cafe.mp3",
+   "ms": 6543,
+   "palabras": [
+    {
+     "texto": "En",
+     "ms": 46,
+     "dur": 164
+    },
+    {
+     "texto": "una",
+     "ms": 220,
+     "dur": 113
+    },
+    {
+     "texto": "cafetería",
+     "ms": 343,
+     "dur": 420
+    },
+    {
+     "texto": "de",
+     "ms": 773,
+     "dur": 61
+    },
+    {
+     "texto": "Nueva",
+     "ms": 845,
+     "dur": 195
+    },
+    {
+     "texto": "York",
+     "ms": 1050,
+     "dur": 236
+    },
+    {
+     "texto": "lo",
+     "ms": 1296,
+     "dur": 72
+    },
+    {
+     "texto": "repitieron",
+     "ms": 1377,
+     "dur": 420
+    },
+    {
+     "texto": "con",
+     "ms": 1808,
+     "dur": 133
+    },
+    {
+     "texto": "café:",
+     "ms": 1951,
+     "dur": 307
+    },
+    {
+     "texto": "con",
+     "ms": 2639,
+     "dur": 215
+    },
+    {
+     "texto": "dos",
+     "ms": 2864,
+     "dur": 143
+    },
+    {
+     "texto": "sellos",
+     "ms": 3018,
+     "dur": 236
+    },
+    {
+     "texto": "de",
+     "ms": 3264,
+     "dur": 61
+    },
+    {
+     "texto": "regalo,",
+     "ms": 3335,
+     "dur": 878
+    },
+    {
+     "texto": "la",
+     "ms": 4055,
+     "dur": 174
+    },
+    {
+     "texto": "completaban",
+     "ms": 4239,
+     "dur": 512
+    },
+    {
+     "texto": "casi",
+     "ms": 4761,
+     "dur": 236
+    },
+    {
+     "texto": "tres",
+     "ms": 5007,
+     "dur": 184
+    },
+    {
+     "texto": "días",
+     "ms": 5202,
+     "dur": 195
+    },
+    {
+     "texto": "antes.",
+     "ms": 5407,
+     "dur": 502
+    }
+   ]
+  },
+  {
+   "id": "remate",
+   "audio": "voz/2026-10-24-dos-sellos-de-regalo/08-remate.mp3",
+   "ms": 6734,
+   "palabras": [
+    {
+     "texto": "Así",
+     "ms": 50,
+     "dur": 307
+    },
+    {
+     "texto": "que,",
+     "ms": 368,
+     "dur": 205
+    },
+    {
+     "texto": "si",
+     "ms": 747,
+     "dur": 102
+    },
+    {
+     "texto": "te",
+     "ms": 859,
+     "dur": 82
+    },
+    {
+     "texto": "dan",
+     "ms": 952,
+     "dur": 133
+    },
+    {
+     "texto": "una",
+     "ms": 1095,
+     "dur": 102
+    },
+    {
+     "texto": "cartilla",
+     "ms": 1208,
+     "dur": 338
+    },
+    {
+     "texto": "con",
+     "ms": 1556,
+     "dur": 154
+    },
+    {
+     "texto": "sellos",
+     "ms": 1720,
+     "dur": 246
+    },
+    {
+     "texto": "ya",
+     "ms": 1976,
+     "dur": 102
+    },
+    {
+     "texto": "puestos…",
+     "ms": 2089,
+     "dur": 471
+    },
+    {
+     "texto": "no",
+     "ms": 3413,
+     "dur": 215
+    },
+    {
+     "texto": "es",
+     "ms": 3638,
+     "dur": 102
+    },
+    {
+     "texto": "un",
+     "ms": 3751,
+     "dur": 82
+    },
+    {
+     "texto": "detalle.",
+     "ms": 3843,
+     "dur": 492
+    },
+    {
+     "texto": "Es",
+     "ms": 5192,
+     "dur": 195
+    },
+    {
+     "texto": "psicología.",
+     "ms": 5397,
+     "dur": 676
+    }
+   ]
+  }
+ ]
+}

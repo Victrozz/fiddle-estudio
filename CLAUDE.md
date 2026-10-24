@@ -44,7 +44,9 @@ quién son, las reglas y los pasos. Las `remotion-*` son las oficiales de Remoti
 
 - `npm install`: instala y baja el código de fiddle (main).
 - `npm run studio`: el Studio de Remotion para ver y tocar los vídeos.
-- `npx remotion still <id> out/x.png --frame=30 --scale=0.5`: un fotograma para revisar.
+- `npx remotion still Hoja out/hoja.jpg --image-format=jpeg --props='{"id":"<id>","momentos":["gancho+30","fin:remate"]}'`:
+  ocho momentos de un vídeo en una imagen (por frases del horario), para revisar.
+- `npx remotion still <id> out/x.png --frame=30 --scale=0.5`: un fotograma suelto.
 - `gh workflow run render.yml -f id=<id>`: render en GitHub y su Release.
 - `npm run fiddle`: poner al día el código de fiddle. Con `FIDDLE_DIR=../fiddle` se usa la
   copia local de la app (para enseñar algo que aún no está en main).

@@ -1,0 +1,15 @@
+{
+  "voz": "alvaro",
+  "velocidad": "+22%",
+  "pausaCorta": 150,
+  "lineas": [
+    {"id": "gancho", "texto": "Dos cartillas de un lavadero de coches. | Una funcionó casi el doble que la otra.", "pausa": 0.35},
+    {"id": "vacia", "texto": "A unos clientes les dieron esta: | ocho casillas, vacía.", "pausa": 0.25},
+    {"id": "regalo", "texto": "A otros, esta: | diez casillas, | con dos ya selladas de regalo.", "pausa": 0.25},
+    {"id": "igual", "texto": "En las dos, | ocho lavados hasta el premio.", "pausa": 0.5},
+    {"id": "meses", "texto": "Meses después, la vacía la había completado el diecinueve por ciento. | La del regalo, | el treinta y cuatro.", "pausa": 0.4},
+    {"id": "nombre", "texto": "Es el efecto del progreso dotado: | lo que ya está empezado | nos cuesta dejarlo a medias.", "pausa": 0.35},
+    {"id": "cafe", "texto": "En una cafetería de Nueva York lo repitieron con café: | con dos sellos de regalo, | la completaban casi tres días antes.", "pausa": 0.4},
+    {"id": "remate", "texto": "Así que, si te dan una cartilla con sellos ya puestos… | no es un detalle. | Es psicología."}
+  ]
+}

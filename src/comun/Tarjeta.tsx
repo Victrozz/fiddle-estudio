@@ -17,6 +17,8 @@ import { CAFETERIA, DISENOS, avisoDe, ejemplo } from "@fiddle/app/home/demo";
 
 type Datos = {
   diseno?: string;
+  /** Cuántas casillas tiene (la web enseña 8). Una de 10 o 12, para contar estudios con cartillas así. */
+  meta?: number;
   puntos?: number;
   puntos2?: number;
   estado?: "abierto" | "cerrado" | null;
@@ -29,21 +31,23 @@ type Datos = {
 const ANCHO_WEB = 360;
 
 /** La tienda y el cliente de ejemplo, ya como los ve el navegador. */
-export function datosDeTarjeta({ diseno, puntos, puntos2, estado, tema }: Datos) {
+export function datosDeTarjeta({ diseno, meta, puntos, puntos2, estado, tema }: Datos) {
   const d = diseno ? DISENOS.find((x: { id: string }) => x.id === diseno) : null;
   if (diseno && !d) throw new Error(`No hay diseño «${diseno}» en DISENOS de fiddle`);
   const base = d ? d.tienda : CAFETERIA;
   const tienda = tema ? { ...base, tema: { ...base.tema, ...tema } } : base;
-  return ejemplo(tienda, puntos ?? d?.sellos ?? 3, {
+  const datos = ejemplo(tienda, puntos ?? d?.sellos ?? 3, {
     sellos2: puntos2 ?? d?.sellos2 ?? 0,
     estado: estado === undefined ? (d?.estado ?? null) : estado,
   });
+  // `ejemplo` fija la meta en 8; la tarjeta la lee del negocio (negocioDeTarjeta).
+  return meta ? { ...datos, negocio: { ...datos.negocio, meta } } : datos;
 }
 
 export const Tarjeta: React.FC<Datos & { ancho?: number; style?: React.CSSProperties }> = ({ ancho = 760, style, ...datos }) => {
-  const { diseno, puntos, puntos2, estado, tema } = datos;
+  const { diseno, meta, puntos, puntos2, estado, tema } = datos;
   const clave = JSON.stringify(tema ?? null);
-  const d = useMemo(() => datosDeTarjeta({ diseno, puntos, puntos2, estado, tema }), [diseno, puntos, puntos2, estado, clave]);
+  const d = useMemo(() => datosDeTarjeta({ diseno, meta, puntos, puntos2, estado, tema }), [diseno, meta, puntos, puntos2, estado, clave]);
   return (
     <div style={{ width: ANCHO_WEB, zoom: ancho / ANCHO_WEB, ...style }}>
       <CaraDelPase negocio={d.negocio} cliente={d.cliente} estado={d.estado} />

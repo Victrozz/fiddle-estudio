@@ -15,6 +15,13 @@ import { Tazas } from "../flat/Tazas";
 import { Trazo } from "../flat/Trazo";
 import { Cortina } from "../flat/Cortina";
 import { Partido } from "../flat/Partido";
+import { Lavadero } from "../flat/Lavadero";
+import { Raton, Queso } from "../flat/Raton";
+import { DeCada100 } from "../flat/DeCada100";
+import { Visitas } from "../flat/Visitas";
+import { Cajon, Cartera, Lavadora, Ojo } from "../flat/Escondites";
+import { Gorila } from "../flat/Gorila";
+import { Libreta, SelloVerde } from "../flat/SellosVerdes";
 import { ZONA_LIBRE, s } from "../formato";
 import { P, TAM } from "../marca";
 
@@ -27,7 +34,7 @@ import { P, TAM } from "../marca";
 // ============================================================================
 
 const T = s(3.5);
-export const DURACION_FLAT = T * 6;
+export const DURACION_FLAT = T * 9;
 
 const Zona: React.FC<{ children: React.ReactNode; gap?: number; justify?: React.CSSProperties["justifyContent"] }> = ({ children, gap = 56, justify = "center" }) => (
   <AbsoluteFill style={{ left: ZONA_LIBRE.x, top: ZONA_LIBRE.y, width: ZONA_LIBRE.ancho, height: ZONA_LIBRE.alto, justifyContent: justify, alignItems: "flex-start", gap }}>{children}</AbsoluteFill>
@@ -132,6 +139,46 @@ export const MuestrarioFlat: React.FC<{ guia?: boolean }> = ({ guia = false }) =
         </Zona>
         <Cortina desde={T - 18} />
         <Efecto sonido="zas" en={T - 18} />
+      </Series.Sequence>
+
+      {/* 7. Dibujos para contar estudios: el lavadero, el ratón y el queso */}
+      <Series.Sequence durationInFrames={T}>
+        <Zona gap={60}>
+          <Lavadero ancho={ZONA_LIBRE.ancho} />
+          <div style={{ display: "flex", alignItems: "flex-end", gap: 40 }}>
+            <Raton tam={300} fase={3} prisa={0.8} />
+            <Queso tam={200} />
+            <Queso tam={200} casillas={10} llenas={6} />
+          </div>
+        </Zona>
+      </Series.Sequence>
+
+      {/* 8. Porcentajes que se ven y visitas que se acercan */}
+      <Series.Sequence durationInFrames={T}>
+        <Zona gap={60}>
+          <div style={{ display: "flex", gap: 60 }}>
+            <DeCada100 valor={19} desde={s(0.3)} ancho={360} color={P.camel} />
+            <DeCada100 valor={34} desde={s(0.3)} ancho={360} />
+          </div>
+          <Visitas huecos={[3.5, 3.3, 3.1, 2.9, 2.8]} en={[s(1.2), s(1.5), s(1.8), s(2.0), s(2.2), s(2.4)]} ancho={ZONA_LIBRE.ancho} arco={36} />
+        </Zona>
+      </Series.Sequence>
+
+      {/* 9. Donde acaba la cartilla, el gorila y los sellos verdes de antes */}
+      <Series.Sequence durationInFrames={T}>
+        <Zona gap={30}>
+          <div style={{ display: "flex", gap: 10 }}>
+            <Cajon ancho={280} />
+            <Cartera ancho={280} />
+            <Lavadora ancho={280} />
+          </div>
+          <div style={{ display: "flex", alignItems: "flex-end", gap: 30 }}>
+            <Gorila tam={240} />
+            <Ojo tam={220} />
+            <SelloVerde tam={110} />
+          </div>
+          <Libreta ancho={520} filas={2} desde={s(0.5)} hasta={s(2.5)} />
+        </Zona>
       </Series.Sequence>
     </Series>
   </Marco>

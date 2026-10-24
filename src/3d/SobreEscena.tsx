@@ -1,5 +1,6 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
+import { ANCHO, ALTO } from "../formato";
 import { aPantalla, type Camara, type V3 } from "./camara";
 import { entrada, salida } from "../comun/movimiento";
 import { P } from "../marca";
@@ -15,7 +16,8 @@ import { P } from "../marca";
 type Props = { camara: Camara; punto: V3; children: React.ReactNode };
 
 export const SobreEscena: React.FC<Props> = ({ camara, punto, children }) => {
-  const { width, height } = useVideoConfig();
+  const width = ANCHO;
+  const height = ALTO;
   const p = aPantalla(punto, camara, width, height);
   if (!p.delante) return null;
   return <div style={{ position: "absolute", left: p.x, top: p.y, transform: "translate(-50%, -100%)" }}>{children}</div>;

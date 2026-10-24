@@ -27,7 +27,7 @@ import tiempos from "./tiempos.json";
 // Guion: guion.md. Todo se coloca con la voz (h).
 // ============================================================================
 
-const h = crearHorario(guion, tiempos);
+const h = crearHorario(guion, tiempos, { holgado: true });
 export const DURACION = h.total;
 
 const ANCHO_CARTILLA = 860;

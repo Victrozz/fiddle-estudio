@@ -9,7 +9,8 @@
 //
 //   AZURE_SPEECH_KEY=… AZURE_SPEECH_REGION=germanywestcentral node scripts/voces/locutar.mjs <id> [<id>…]
 //
-// En el texto, «|» es una pausa corta. Lo que se lee mal se arregla en
+// En el texto, «|» es una pausa corta (`pausaCorta` en locucion.json, 250 ms de
+// partida; los de contar historias van a 150). Lo que se lee mal se arregla en
 // pronunciacion.json («fiddle» → «fídel»); los subtítulos llevan la palabra escrita.
 // ============================================================================
 
@@ -56,10 +57,10 @@ function conSignos(palabras, texto) {
   });
 }
 
-function decir(texto, voz, { velocidad = "+0%", tono = "+0%" }) {
+function decir(texto, voz, { velocidad = "+0%", tono = "+0%", pausaCorta = 250 }) {
   const v = VOCES[voz];
   if (!v) throw new Error(`No hay voz «${voz}» en elegidas.json`);
-  const frase = escapar(paraVoz(texto)).replace(/\s*\|\s*/g, " <break time='250ms'/> ");
+  const frase = escapar(paraVoz(texto)).replace(/\s*\|\s*/g, ` <break time='${pausaCorta}ms'/> `);
   const conIdioma = v.idioma ? `<lang xml:lang='${v.idioma}'>${frase}</lang>` : frase;
   const ssml = `<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='es-ES'><voice name='${v.voz}'><prosody rate='${velocidad}' pitch='${tono}'>${conIdioma}</prosody></voice></speak>`;
 
@@ -101,7 +102,7 @@ for (const id of process.argv.slice(2)) {
 
   const lineas = [];
   for (const [i, l] of guion.lineas.entries()) {
-    const r = await decir(l.texto, voz, { velocidad: l.velocidad ?? guion.velocidad, tono: l.tono ?? guion.tono });
+    const r = await decir(l.texto, voz, { velocidad: l.velocidad ?? guion.velocidad, tono: l.tono ?? guion.tono, pausaCorta: guion.pausaCorta });
     const archivo = `${String(i + 1).padStart(2, "0")}-${l.id}.mp3`;
     writeFileSync(path.join(salida, archivo), r.audio);
     lineas.push({ id: l.id, audio: `voz/${id}/${archivo}`, ms: r.ms, palabras: conSignos(r.palabras, l.texto) });

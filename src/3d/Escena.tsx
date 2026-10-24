@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useMemo } from "react";
 import * as THREE from "three";
 import { useThree } from "@react-three/fiber";
 import { ThreeCanvas } from "@remotion/three";
-import { useVideoConfig } from "remotion";
+import { ANCHO, ALTO } from "../formato";
 import { aplicarCamara, type Camara } from "./camara";
 import { P } from "../marca";
 
@@ -31,7 +31,8 @@ type Props = {
 };
 
 export const Escena: React.FC<Props> = ({ camara, fondo = P.papel, niebla, alcanceSombra = 10, children }) => {
-  const { width, height } = useVideoConfig();
+  const width = ANCHO;
+  const height = ALTO;
   return (
     <ThreeCanvas width={width} height={height} shadows gl={{ antialias: true, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
       {fondo && <color attach="background" args={[fondo]} />}

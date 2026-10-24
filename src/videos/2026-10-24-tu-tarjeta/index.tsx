@@ -27,7 +27,7 @@ import tiempos from "./tiempos.json";
 // El fondo se tiñe con el color de cada tarjeta.
 // ============================================================================
 
-const h = crearHorario(guion, tiempos);
+const h = crearHorario(guion, tiempos, { holgado: true });
 export const DURACION = h.total;
 
 const fondoDe = (id: string | null) => {

@@ -11,6 +11,9 @@ import { tramo } from "../comun/movimiento";
 //
 // `ultimoEn`: el fotograma en que cae el último sello (rebota y la cartilla
 // tiembla). `gastada`: con el aro de café, el doblez y la esquina doblada.
+// `motivo`: lo que llevan el sello y la esquina (una taza, o un coche para la del
+// lavadero). `ultimaGratis`: si la última casilla ES el premio o el premio va
+// después de llenarla (la del lavadero: ocho lavados y el siguiente, gratis).
 // ============================================================================
 
 type Props = {
@@ -22,14 +25,27 @@ type Props = {
   gastada?: boolean;
   /** Para que dos cartillas no tengan los sellos igual de torcidos. */
   semilla?: string;
+  motivo?: Motivo;
+  /** La segunda línea impresa. */
+  leyenda?: string;
+  ultimaGratis?: boolean;
   style?: React.CSSProperties;
 };
+
+type Motivo = "taza" | "coche";
 
 export const KRAFT = "#cda77b";
 export const TINTA_SELLO = "#a3352d";
 const TINTA_IMPRESA = "#4b3121";
 
-export const CartillaCarton: React.FC<Props> = ({ total = 10, marcados, ancho = 820, nombre = "Tu cafetería", ultimoEn, gastada = false, semilla = "cartilla", style }) => {
+/** Dónde cae el centro de la casilla `i` en una cartilla de `ancho` (para bajar un SelloGoma encima). */
+export function casillaDe(total: number, ancho: number, i: number) {
+  const porFila = Math.ceil(total / 2);
+  const d = (ancho * 0.8) / porFila;
+  return { x: ancho * 0.1 + d * ((i % porFila) + 0.5), y: ancho * 0.63 * (Math.floor(i / porFila) === 0 ? 0.52 : 0.78) };
+}
+
+export const CartillaCarton: React.FC<Props> = ({ total = 10, marcados, ancho = 820, nombre = "Tu cafetería", ultimoEn, gastada = false, semilla = "cartilla", motivo = "taza", leyenda, ultimaGratis = true, style }) => {
   const frame = useCurrentFrame();
   const id = useId().replace(/[^a-zA-Z0-9]/g, "");
   const alto = ancho * 0.63;
@@ -70,16 +86,13 @@ export const CartillaCarton: React.FC<Props> = ({ total = 10, marcados, ancho = 
             {nombre.toUpperCase()}
           </text>
           <text x={ancho * 0.08} y={alto * 0.29} fill={TINTA_IMPRESA} fillOpacity={0.75} fontSize={ancho * 0.033} fontWeight={500}>
-            {`Al ${total}.º, invitamos nosotros`}
+            {leyenda ?? `Al ${total}.º, invitamos nosotros`}
           </text>
-          <Taza x={ancho * 0.85} y={alto * 0.17} tam={ancho * 0.07} />
+          {motivo === "taza" ? <Taza x={ancho * 0.85} y={alto * 0.17} tam={ancho * 0.07} /> : <CocheImpreso x={ancho * 0.85} y={alto * 0.17} tam={ancho * 0.09} />}
 
           {Array.from({ length: total }, (_, i) => {
-            const fila = Math.floor(i / porFila);
-            const col = i % porFila;
-            const cx = ancho * 0.1 + d * (col + 0.5);
-            const cy = alto * (fila === 0 ? 0.52 : 0.78);
-            const ultima = i === total - 1;
+            const { x: cx, y: cy } = casillaDe(total, ancho, i);
+            const ultima = ultimaGratis && i === total - 1;
             const sellado = i < marcados;
             const cae = sellado && i === marcados - 1 && ultimoEn !== undefined;
             const t = cae ? tramo(frame, ultimoEn!, 4) : 1;
@@ -92,7 +105,7 @@ export const CartillaCarton: React.FC<Props> = ({ total = 10, marcados, ancho = 
                 <Casilla cx={cx} cy={cy} r={r} ultima={ultima} ancho={ancho} />
                 {sellado && (
                   <g transform={`translate(${cx + dx} ${cy + dy}) rotate(${giro}) scale(${1.25 - 0.25 * t})`} opacity={0.85 * Math.min(1, t * 3)} filter={`url(#tinta-${id})`}>
-                    <MarcaSello r={r * 1.08} />
+                    <MarcaSello r={r * 1.08} motivo={motivo} />
                   </g>
                 )}
               </g>
@@ -125,13 +138,33 @@ const Casilla: React.FC<{ cx: number; cy: number; r: number; ultima: boolean; an
   </g>
 );
 
-/** La huella del sello de goma: un aro y una taza, en tinta. */
-const MarcaSello: React.FC<{ r: number }> = ({ r }) => (
+/** La huella del sello de goma: un aro y una taza (o un coche), en tinta. */
+const MarcaSello: React.FC<{ r: number; motivo: Motivo }> = ({ r, motivo }) => (
   <g fill="none" stroke={TINTA_SELLO} strokeWidth={r * 0.13} strokeLinecap="round" strokeLinejoin="round">
     <circle r={r * 0.9} />
-    <path d={`M${-r * 0.4} ${-r * 0.22} h${r * 0.66} v${r * 0.26} a${r * 0.33} ${r * 0.33} 0 0 1 ${-r * 0.66} 0 z`} fill={TINTA_SELLO} />
-    <path d={`M${r * 0.27} ${-r * 0.12} a${r * 0.16} ${r * 0.16} 0 0 1 0 ${r * 0.3}`} />
-    <path d={`M${-r * 0.46} ${r * 0.44} h${r * 0.8}`} />
+    {motivo === "taza" ? (
+      <>
+        <path d={`M${-r * 0.4} ${-r * 0.22} h${r * 0.66} v${r * 0.26} a${r * 0.33} ${r * 0.33} 0 0 1 ${-r * 0.66} 0 z`} fill={TINTA_SELLO} />
+        <path d={`M${r * 0.27} ${-r * 0.12} a${r * 0.16} ${r * 0.16} 0 0 1 0 ${r * 0.3}`} />
+        <path d={`M${-r * 0.46} ${r * 0.44} h${r * 0.8}`} />
+      </>
+    ) : (
+      <>
+        <path d={`M${-r * 0.55} ${r * 0.12} v${-r * 0.2} l${r * 0.2} ${-r * 0.06} l${r * 0.16} ${-r * 0.22} h${r * 0.36} l${r * 0.16} ${r * 0.22} l${r * 0.17} ${r * 0.06} v${r * 0.2} z`} fill={TINTA_SELLO} />
+        <circle cx={-r * 0.3} cy={r * 0.2} r={r * 0.11} fill={TINTA_SELLO} />
+        <circle cx={r * 0.3} cy={r * 0.2} r={r * 0.11} fill={TINTA_SELLO} />
+      </>
+    )}
+  </g>
+);
+
+/** El coche impreso de la esquina (la cartilla del lavadero). */
+const CocheImpreso: React.FC<{ x: number; y: number; tam: number }> = ({ x, y, tam }) => (
+  <g transform={`translate(${x} ${y})`} fill="none" stroke={TINTA_IMPRESA} strokeOpacity={0.8} strokeWidth={tam * 0.07} strokeLinecap="round" strokeLinejoin="round">
+    <path d={`M${-tam * 0.5} ${tam * 0.12} v${-tam * 0.18} l${tam * 0.18} ${-tam * 0.06} l${tam * 0.14} ${-tam * 0.2} h${tam * 0.36} l${tam * 0.14} ${tam * 0.2} l${tam * 0.18} ${tam * 0.06} v${tam * 0.18} z`} />
+    <circle cx={-tam * 0.27} cy={tam * 0.16} r={tam * 0.09} />
+    <circle cx={tam * 0.27} cy={tam * 0.16} r={tam * 0.09} />
+    <path d={`M${-tam * 0.35} ${-tam * 0.42} q${tam * 0.05} ${-tam * 0.1} 0 ${-tam * 0.18} M${-tam * 0.1} ${-tam * 0.42} q${tam * 0.05} ${-tam * 0.1} 0 ${-tam * 0.18}`} />
   </g>
 );
 

@@ -29,7 +29,7 @@ import tiempos from "./tiempos.json";
 // Los segundos son una ilustración: antes de publicarlo, cronometrarlo de verdad.
 // ============================================================================
 
-const h = crearHorario(guion, tiempos);
+const h = crearHorario(guion, tiempos, { holgado: true });
 export const DURACION = h.total;
 
 const SEGUNDOS = 3;

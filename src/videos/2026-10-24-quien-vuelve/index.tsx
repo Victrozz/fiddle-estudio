@@ -31,7 +31,7 @@ import tiempos from "./tiempos.json";
 // note; con fiddle, la tienda lo ve (En riesgo), le avisa y vuelve.
 // ============================================================================
 
-const h = crearHorario(guion, tiempos);
+const h = crearHorario(guion, tiempos, { holgado: true });
 export const DURACION = h.total;
 
 const MARTA = "#c4573a";

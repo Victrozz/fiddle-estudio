@@ -1,0 +1,17 @@
+{
+  "voz": "alvaro",
+  "velocidad": "+22%",
+  "pausaCorta": 150,
+  "lineas": [
+    {"id": "gancho", "texto": "¿Dónde está tu cartilla de la cafetería?", "pausa": 0.6},
+    {"id": "exacto", "texto": "Exacto. | Ni idea.", "pausa": 0.3},
+    {"id": "donde", "texto": "En un cajón, | en otra cartera, | o en un pantalón recién salido de la lavadora.", "pausa": 0.3},
+    {"id": "regla", "texto": "Y lo que no se ve, | no se usa.", "pausa": 0.45},
+    {"id": "zajonc", "texto": "En mil novecientos sesenta y ocho, | Robert Zajonc enseñó a unos estudiantes palabras inventadas.", "pausa": 0.2},
+    {"id": "veces", "texto": "Unas, una vez. | Otras, hasta veinticinco.", "pausa": 0.3},
+    {"id": "resultado", "texto": "Cuantas más veces las habían visto, | mejor les parecían. | Es el efecto de mera exposición.", "pausa": 0.45},
+    {"id": "movil", "texto": "Ahora piensa en lo que miras decenas de veces al día.", "pausa": 0.3},
+    {"id": "wallet", "texto": "En el móvil, la tarjeta vive al lado de la del banco. | Y cada punto te sale en la pantalla.", "pausa": 0.45},
+    {"id": "remate", "texto": "Tu cafetería favorita igual no es la mejor. | Es la que más ves."}
+  ]
+}

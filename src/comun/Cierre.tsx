@@ -2,7 +2,8 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import LogoFiddle from "@fiddle/app/LogoFiddle";
 import { TELEFONO_VISIBLE } from "@fiddle/app/home/datos";
-import { entrada } from "./movimiento";
+import { entrada, tramo } from "./movimiento";
+import { Efecto } from "./Efecto";
 import { FONDOS, P, suaveDe, tintaDe, type Fondo } from "../marca";
 
 // ============================================================================
@@ -42,6 +43,25 @@ export const Cierre: React.FC<Props> = ({
         <div style={{ fontSize: 52, fontWeight: 600, letterSpacing: "-0.02em" }}>{lema}</div>
         <div style={{ fontSize: 40, color: suaveDe(fondo) }}>{llamada}</div>
       </div>
+    </AbsoluteFill>
+  );
+};
+
+/**
+ * El final de los vídeos que no son anuncios: solo la marca, un segundo y medio,
+ * sin voz ni frase. Que quien quiera sepa de quién es la cuenta, sin venderle nada.
+ */
+export const Marca: React.FC<{ desde: number; fondo?: Fondo }> = ({ desde, fondo = "verde" }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (frame < desde) return null;
+  const logo = entrada(frame, fps, desde + 2);
+  return (
+    <AbsoluteFill style={{ background: FONDOS[fondo], color: tintaDe(fondo), alignItems: "center", justifyContent: "center", opacity: tramo(frame, desde, 5) }}>
+      <div style={{ transform: `scale(${0.82 + 0.18 * logo})`, opacity: Math.min(1, logo * 1.6) }}>
+        <LogoFiddle tam={190} color={fondo === "verde" ? P.avena : tintaDe(fondo)} id="efe-marca" />
+      </div>
+      <Efecto sonido="pop" en={desde + 2} volumen={0.3} />
     </AbsoluteFill>
   );
 };

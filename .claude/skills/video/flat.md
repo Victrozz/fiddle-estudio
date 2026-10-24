@@ -14,17 +14,19 @@ ejemplos de uso. Todo se mueve con `src/comun/movimiento.ts` (`entrada`, `salida
 | `Aparece` | Cualquier cosa que entra subiendo (y se va con `hasta`). |
 | `Etiqueta` | Pastilla en mayúsculas: «SIN FIDDLE», «HOY». |
 | `Contador` | Una cifra que cuenta, en formato español («1,80 €»). |
-| `Tarjeta` | **La tarjeta de verdad** (CaraDelPase de fiddle). `diseno` (id de DISENOS) y `puntos`. |
+| `Tarjeta` | **La tarjeta de verdad** (CaraDelPase de fiddle). `diseno` (id de DISENOS), `puntos` y `meta` (casillas: la web enseña 8). |
 | `avisoDeTarjeta` | El texto que sale en la pantalla de bloqueo al sumar un punto, el del pase de verdad. |
 | `Movil` | Un móvil genérico. Lo de dentro se maqueta en puntos (390 de ancho). |
 | `PantallaBloqueo`, `Notificacion`, `NotificacionDeTienda` | La pantalla de bloqueo y sus avisos (dentro de un `Movil`). |
 | `Caja` | **La caja de verdad** (TarjetaCaja de fiddle en demo): lo que ve el personal al escanear. Dentro de un `Movil`. |
 | `Toque` | Un dedo que toca, en puntos del móvil. «Añadir punto» está hacia `x=195, y=330`. |
 | `Efecto` | Un sonido: `pop`, `tic`, `ding`, `golpe`, `zas`, `caja` (`npm run sonidos`). |
-| `Cierre` | Los últimos 2-3 s: logo, lema y teléfono. |
+| `Cierre` | Los últimos 2-3 s de un anuncio: logo, lema y teléfono. |
+| `Marca` | El final del contenido: solo el logo, 1,5 s, sin voz. |
+| `Cita` | De dónde sale lo que se cuenta: «Nunes y Drèze, 2006». Toda cifra de estudio la lleva. |
 | `Icono` | Los iconos de la app (check, cerrar, campana, clientes, cartera, reloj, regalo…). |
 | `crearHorario`, `Locucion`, `Subtitulos` | La voz: cuándo empieza cada frase y cada palabra, el audio y los subtítulos que van con él. |
-| `Ventana`, `ZonaEscena` | Una escena entre dos fotogramas (absolutos, del horario) y el hueco donde va lo que se lee. |
+| `Ventana`, `ZonaEscena` | Una escena entre dos fotogramas (absolutos, del horario) y el hueco donde va lo que se lee. `paso` («funde», «barrido», «zoom») y `deriva` (la cámara se acerca despacio). |
 | `MovilGrande`, `AvisoGrande`, `puntoDelMovil` | El móvil que sube grande desde abajo, y el aviso ampliado que sale de él (a tamaño real no se lee). |
 | `PantallaTarjeta` | La pantalla de un móvil con la tarjeta guardada y, con `conQR`, su QR y su código. |
 | `QrFalso` | Un QR que no se puede escanear: para no poner el serial de nadie. |
@@ -33,7 +35,7 @@ ejemplos de uso. Todo se mueve con `src/comun/movimiento.ts` (`entrada`, `salida
 
 | Pieza | Qué es |
 | --- | --- |
-| `CartillaCarton` | La cartilla de cartón con sellos de goma. `ultimoEn` hace caer el último; `gastada` le pone el aro de café y el doblez. |
+| `CartillaCarton` | La cartilla de cartón con sellos de goma. `ultimoEn` hace caer el último; `gastada` le pone el aro de café y el doblez; `motivo` («coche» para un lavadero), `leyenda`, `ultimaGratis`. `casillaDe` dice dónde cae cada casilla (para el `SelloGoma`). |
 | `SelloGoma` | El tampón que baja y golpea (con `Efecto sonido="golpe"`). |
 | `Partido` | Pantalla partida en dos franjas: arriba «Sin fiddle», abajo «Con fiddle». |
 | `Comparativa` | Filas con ✓ / ✗ / texto por columna. ✓ = bueno para la tienda: filas en positivo. |
@@ -46,6 +48,13 @@ ejemplos de uso. Todo se mueve con `src/comun/movimiento.ts` (`entrada`, `salida
 | `Cortina` | Paño de color que barre la pantalla (con `zas`). Para cambios de escena del póster; fundidos y deslizamientos, `TransitionSeries` de `@remotion/transitions`. |
 | `ListaClientes` | Filas de clientes con los estados del CRM de la app (A su ritmo, Nuevo, En riesgo…); una fila puede cambiar de estado en un fotograma. |
 | `Cuenta` | Una cuenta que se escribe trozo a trozo: «1,80 € × 250 = 450 €». |
+| `DeCada100` | Cien puntos que se encienden hasta un porcentaje: 19 de cada 100 contra 34. |
+| `Visitas` | Las visitas en una línea, con un arco por cada espera: arcos que encogen = vuelve antes. |
+| `Lavadero` | Un lavadero de coches de perfil, con rodillos que giran, espuma y el coche (`cocheX`). |
+| `Raton`, `Queso` | Un ratón que anda (`fase`) o corre (`prisa`); el queso, que con `casillas` es una cartilla. |
+| `Cajon`, `Cartera`, `Lavadora`, `Ojo` | Donde acaba la cartilla de cartón (en la lavadora, dando vueltas) y un ojo que se cierra. |
+| `Gorila` | Un gorila sentado, tranquilo, que parpadea. |
+| `SelloVerde`, `Libreta`, `LluviaSellos` | Los sellos de las tiendas de antes: uno, una libreta que se llena, muchos cayendo. |
 
 ## El estilo
 

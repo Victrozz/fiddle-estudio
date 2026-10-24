@@ -1,0 +1,640 @@
+{
+ "voz": "es-ES-AlvaroNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/01-gancho.mp3",
+   "ms": 2222,
+   "palabras": [
+    {
+     "texto": "¿Dónde",
+     "ms": 50,
+     "dur": 266
+    },
+    {
+     "texto": "está",
+     "ms": 327,
+     "dur": 164
+    },
+    {
+     "texto": "tu",
+     "ms": 501,
+     "dur": 82
+    },
+    {
+     "texto": "cartilla",
+     "ms": 593,
+     "dur": 338
+    },
+    {
+     "texto": "de",
+     "ms": 941,
+     "dur": 51
+    },
+    {
+     "texto": "la",
+     "ms": 1003,
+     "dur": 51
+    },
+    {
+     "texto": "cafetería?",
+     "ms": 1064,
+     "dur": 502
+    }
+   ]
+  },
+  {
+   "id": "exacto",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/02-exacto.mp3",
+   "ms": 2699,
+   "palabras": [
+    {
+     "texto": "Exacto.",
+     "ms": 50,
+     "dur": 533
+    },
+    {
+     "texto": "Ni",
+     "ms": 1440,
+     "dur": 246
+    },
+    {
+     "texto": "idea.",
+     "ms": 1696,
+     "dur": 348
+    }
+   ]
+  },
+  {
+   "id": "donde",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/03-donde.mp3",
+   "ms": 4716,
+   "palabras": [
+    {
+     "texto": "En",
+     "ms": 50,
+     "dur": 195
+    },
+    {
+     "texto": "un",
+     "ms": 255,
+     "dur": 82
+    },
+    {
+     "texto": "cajón,",
+     "ms": 347,
+     "dur": 338
+    },
+    {
+     "texto": "en",
+     "ms": 1050,
+     "dur": 195
+    },
+    {
+     "texto": "otra",
+     "ms": 1255,
+     "dur": 143
+    },
+    {
+     "texto": "cartera,",
+     "ms": 1409,
+     "dur": 804
+    },
+    {
+     "texto": "o",
+     "ms": 2153,
+     "dur": 184
+    },
+    {
+     "texto": "en",
+     "ms": 2348,
+     "dur": 61
+    },
+    {
+     "texto": "un",
+     "ms": 2420,
+     "dur": 82
+    },
+    {
+     "texto": "pantalón",
+     "ms": 2512,
+     "dur": 359
+    },
+    {
+     "texto": "recién",
+     "ms": 2881,
+     "dur": 307
+    },
+    {
+     "texto": "salido",
+     "ms": 3198,
+     "dur": 256
+    },
+    {
+     "texto": "de",
+     "ms": 3465,
+     "dur": 61
+    },
+    {
+     "texto": "la",
+     "ms": 3536,
+     "dur": 61
+    },
+    {
+     "texto": "lavadora.",
+     "ms": 3608,
+     "dur": 492
+    }
+   ]
+  },
+  {
+   "id": "regla",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/04-regla.mp3",
+   "ms": 2556,
+   "palabras": [
+    {
+     "texto": "Y",
+     "ms": 50,
+     "dur": 143
+    },
+    {
+     "texto": "lo",
+     "ms": 204,
+     "dur": 92
+    },
+    {
+     "texto": "que",
+     "ms": 306,
+     "dur": 82
+    },
+    {
+     "texto": "no",
+     "ms": 398,
+     "dur": 92
+    },
+    {
+     "texto": "se",
+     "ms": 501,
+     "dur": 102
+    },
+    {
+     "texto": "ve,",
+     "ms": 614,
+     "dur": 184
+    },
+    {
+     "texto": "no",
+     "ms": 1138,
+     "dur": 225
+    },
+    {
+     "texto": "se",
+     "ms": 1374,
+     "dur": 133
+    },
+    {
+     "texto": "usa.",
+     "ms": 1517,
+     "dur": 400
+    }
+   ]
+  },
+  {
+   "id": "zajonc",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/05-zajonc.mp3",
+   "ms": 5211,
+   "palabras": [
+    {
+     "texto": "En",
+     "ms": 50,
+     "dur": 195
+    },
+    {
+     "texto": "mil",
+     "ms": 255,
+     "dur": 123
+    },
+    {
+     "texto": "novecientos",
+     "ms": 388,
+     "dur": 451
+    },
+    {
+     "texto": "sesenta",
+     "ms": 849,
+     "dur": 297
+    },
+    {
+     "texto": "y",
+     "ms": 1157,
+     "dur": 51
+    },
+    {
+     "texto": "ocho,",
+     "ms": 1218,
+     "dur": 297
+    },
+    {
+     "texto": "Robert",
+     "ms": 1866,
+     "dur": 359
+    },
+    {
+     "texto": "Zajonc",
+     "ms": 2234,
+     "dur": 328
+    },
+    {
+     "texto": "enseñó",
+     "ms": 2573,
+     "dur": 287
+    },
+    {
+     "texto": "a",
+     "ms": 2870,
+     "dur": 31
+    },
+    {
+     "texto": "unos",
+     "ms": 2911,
+     "dur": 195
+    },
+    {
+     "texto": "estudiantes",
+     "ms": 3116,
+     "dur": 482
+    },
+    {
+     "texto": "palabras",
+     "ms": 3607,
+     "dur": 328
+    },
+    {
+     "texto": "inventadas.",
+     "ms": 3946,
+     "dur": 625
+    }
+   ]
+  },
+  {
+   "id": "veces",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/06-veces.mp3",
+   "ms": 4064,
+   "palabras": [
+    {
+     "texto": "Unas,",
+     "ms": 50,
+     "dur": 420
+    },
+    {
+     "texto": "una",
+     "ms": 696,
+     "dur": 113
+    },
+    {
+     "texto": "vez.",
+     "ms": 818,
+     "dur": 328
+    },
+    {
+     "texto": "Otras,",
+     "ms": 2003,
+     "dur": 420
+    },
+    {
+     "texto": "hasta",
+     "ms": 2628,
+     "dur": 143
+    },
+    {
+     "texto": "veinticinco.",
+     "ms": 2782,
+     "dur": 625
+    }
+   ]
+  },
+  {
+   "id": "resultado",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/07-resultado.mp3",
+   "ms": 5953,
+   "palabras": [
+    {
+     "texto": "Cuantas",
+     "ms": 50,
+     "dur": 369
+    },
+    {
+     "texto": "más",
+     "ms": 429,
+     "dur": 154
+    },
+    {
+     "texto": "veces",
+     "ms": 593,
+     "dur": 236
+    },
+    {
+     "texto": "las",
+     "ms": 839,
+     "dur": 133
+    },
+    {
+     "texto": "habían",
+     "ms": 982,
+     "dur": 225
+    },
+    {
+     "texto": "visto,",
+     "ms": 1218,
+     "dur": 328
+    },
+    {
+     "texto": "mejor",
+     "ms": 1866,
+     "dur": 379
+    },
+    {
+     "texto": "les",
+     "ms": 2255,
+     "dur": 123
+    },
+    {
+     "texto": "parecían.",
+     "ms": 2388,
+     "dur": 553
+    },
+    {
+     "texto": "Es",
+     "ms": 3778,
+     "dur": 195
+    },
+    {
+     "texto": "el",
+     "ms": 3983,
+     "dur": 72
+    },
+    {
+     "texto": "efecto",
+     "ms": 4065,
+     "dur": 297
+    },
+    {
+     "texto": "de",
+     "ms": 4372,
+     "dur": 82
+    },
+    {
+     "texto": "mera",
+     "ms": 4464,
+     "dur": 143
+    },
+    {
+     "texto": "exposición.",
+     "ms": 4618,
+     "dur": 686
+    }
+   ]
+  },
+  {
+   "id": "movil",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/08-movil.mp3",
+   "ms": 2939,
+   "palabras": [
+    {
+     "texto": "Ahora",
+     "ms": 46,
+     "dur": 307
+    },
+    {
+     "texto": "piensa",
+     "ms": 363,
+     "dur": 307
+    },
+    {
+     "texto": "en",
+     "ms": 681,
+     "dur": 51
+    },
+    {
+     "texto": "lo",
+     "ms": 742,
+     "dur": 72
+    },
+    {
+     "texto": "que",
+     "ms": 824,
+     "dur": 92
+    },
+    {
+     "texto": "miras",
+     "ms": 927,
+     "dur": 215
+    },
+    {
+     "texto": "decenas",
+     "ms": 1152,
+     "dur": 318
+    },
+    {
+     "texto": "de",
+     "ms": 1480,
+     "dur": 61
+    },
+    {
+     "texto": "veces",
+     "ms": 1552,
+     "dur": 266
+    },
+    {
+     "texto": "al",
+     "ms": 1828,
+     "dur": 82
+    },
+    {
+     "texto": "día.",
+     "ms": 1921,
+     "dur": 359
+    }
+   ]
+  },
+  {
+   "id": "wallet",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/09-wallet.mp3",
+   "ms": 5650,
+   "palabras": [
+    {
+     "texto": "En",
+     "ms": 50,
+     "dur": 174
+    },
+    {
+     "texto": "el",
+     "ms": 234,
+     "dur": 82
+    },
+    {
+     "texto": "móvil,",
+     "ms": 327,
+     "dur": 287
+    },
+    {
+     "texto": "la",
+     "ms": 829,
+     "dur": 72
+    },
+    {
+     "texto": "tarjeta",
+     "ms": 911,
+     "dur": 348
+    },
+    {
+     "texto": "vive",
+     "ms": 1269,
+     "dur": 195
+    },
+    {
+     "texto": "al",
+     "ms": 1474,
+     "dur": 61
+    },
+    {
+     "texto": "lado",
+     "ms": 1546,
+     "dur": 184
+    },
+    {
+     "texto": "de",
+     "ms": 1741,
+     "dur": 72
+    },
+    {
+     "texto": "la",
+     "ms": 1823,
+     "dur": 61
+    },
+    {
+     "texto": "del",
+     "ms": 1894,
+     "dur": 102
+    },
+    {
+     "texto": "banco.",
+     "ms": 2007,
+     "dur": 430
+    },
+    {
+     "texto": "Y",
+     "ms": 3290,
+     "dur": 133
+    },
+    {
+     "texto": "cada",
+     "ms": 3433,
+     "dur": 195
+    },
+    {
+     "texto": "punto",
+     "ms": 3638,
+     "dur": 266
+    },
+    {
+     "texto": "te",
+     "ms": 3915,
+     "dur": 92
+    },
+    {
+     "texto": "sale",
+     "ms": 4017,
+     "dur": 225
+    },
+    {
+     "texto": "en",
+     "ms": 4253,
+     "dur": 61
+    },
+    {
+     "texto": "la",
+     "ms": 4325,
+     "dur": 72
+    },
+    {
+     "texto": "pantalla.",
+     "ms": 4407,
+     "dur": 584
+    }
+   ]
+  },
+  {
+   "id": "remate",
+   "audio": "voz/2026-10-24-lo-que-no-se-ve/10-remate.mp3",
+   "ms": 4462,
+   "palabras": [
+    {
+     "texto": "Tu",
+     "ms": 50,
+     "dur": 143
+    },
+    {
+     "texto": "cafetería",
+     "ms": 204,
+     "dur": 451
+    },
+    {
+     "texto": "favorita",
+     "ms": 665,
+     "dur": 369
+    },
+    {
+     "texto": "igual",
+     "ms": 1044,
+     "dur": 246
+    },
+    {
+     "texto": "no",
+     "ms": 1300,
+     "dur": 123
+    },
+    {
+     "texto": "es",
+     "ms": 1433,
+     "dur": 82
+    },
+    {
+     "texto": "la",
+     "ms": 1525,
+     "dur": 61
+    },
+    {
+     "texto": "mejor.",
+     "ms": 1597,
+     "dur": 430
+    },
+    {
+     "texto": "Es",
+     "ms": 2880,
+     "dur": 195
+    },
+    {
+     "texto": "la",
+     "ms": 3085,
+     "dur": 82
+    },
+    {
+     "texto": "que",
+     "ms": 3177,
+     "dur": 82
+    },
+    {
+     "texto": "más",
+     "ms": 3269,
+     "dur": 174
+    },
+    {
+     "texto": "ves.",
+     "ms": 3454,
+     "dur": 348
+    }
+   ]
+  }
+ ]
+}

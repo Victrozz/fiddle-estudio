@@ -24,7 +24,7 @@ import tiempos from "./tiempos.json";
 // precio del café (1,80 €) y los días (250 laborables) son supuestos.
 // ============================================================================
 
-const h = crearHorario(guion, tiempos);
+const h = crearHorario(guion, tiempos, { holgado: true });
 export const DURACION = h.total;
 
 const UnCafeGratis: React.FC = () => {

@@ -1,0 +1,628 @@
+{
+ "voz": "en-US-BrianMultilingualNeural",
+ "lineas": [
+  {
+   "id": "gancho",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/01-gancho.mp3",
+   "ms": 4406,
+   "palabras": [
+    {
+     "texto": "Las",
+     "ms": 85,
+     "dur": 201
+    },
+    {
+     "texto": "cafeterías",
+     "ms": 297,
+     "dur": 572
+    },
+    {
+     "texto": "con",
+     "ms": 879,
+     "dur": 170
+    },
+    {
+     "texto": "sillas",
+     "ms": 1059,
+     "dur": 413
+    },
+    {
+     "texto": "tienen",
+     "ms": 1483,
+     "dur": 297
+    },
+    {
+     "texto": "un",
+     "ms": 1790,
+     "dur": 117
+    },
+    {
+     "texto": "truco",
+     "ms": 1917,
+     "dur": 883
+    },
+    {
+     "texto": "que",
+     "ms": 2565,
+     "dur": 74
+    },
+    {
+     "texto": "las",
+     "ms": 2650,
+     "dur": 170
+    },
+    {
+     "texto": "de",
+     "ms": 2830,
+     "dur": 95
+    },
+    {
+     "texto": "para",
+     "ms": 2936,
+     "dur": 180
+    },
+    {
+     "texto": "llevar",
+     "ms": 3127,
+     "dur": 339
+    },
+    {
+     "texto": "no",
+     "ms": 3476,
+     "dur": 148
+    },
+    {
+     "texto": "tienen.",
+     "ms": 3635,
+     "dur": 508
+    }
+   ]
+  },
+  {
+   "id": "sitio",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/02-sitio.mp3",
+   "ms": 4801,
+   "palabras": [
+    {
+     "texto": "La",
+     "ms": 74,
+     "dur": 148
+    },
+    {
+     "texto": "gente",
+     "ms": 233,
+     "dur": 318
+    },
+    {
+     "texto": "vuelve",
+     "ms": 561,
+     "dur": 328
+    },
+    {
+     "texto": "por",
+     "ms": 900,
+     "dur": 148
+    },
+    {
+     "texto": "el",
+     "ms": 1059,
+     "dur": 95
+    },
+    {
+     "texto": "sitio:",
+     "ms": 1165,
+     "dur": 785
+    },
+    {
+     "texto": "su",
+     "ms": 1834,
+     "dur": 180
+    },
+    {
+     "texto": "mesa,",
+     "ms": 2025,
+     "dur": 641
+    },
+    {
+     "texto": "su",
+     "ms": 2715,
+     "dur": 170
+    },
+    {
+     "texto": "rincón,",
+     "ms": 2895,
+     "dur": 776
+    },
+    {
+     "texto": "su",
+     "ms": 3702,
+     "dur": 201
+    },
+    {
+     "texto": "camarero.",
+     "ms": 3914,
+     "dur": 636
+    }
+   ]
+  },
+  {
+   "id": "tercer",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/03-tercer.mp3",
+   "ms": 4967,
+   "palabras": [
+    {
+     "texto": "El",
+     "ms": 74,
+     "dur": 138
+    },
+    {
+     "texto": "sociólogo",
+     "ms": 222,
+     "dur": 477
+    },
+    {
+     "texto": "Ray",
+     "ms": 710,
+     "dur": 265
+    },
+    {
+     "texto": "Oldenburg",
+     "ms": 985,
+     "dur": 540
+    },
+    {
+     "texto": "lo",
+     "ms": 1536,
+     "dur": 127
+    },
+    {
+     "texto": "llamó",
+     "ms": 1674,
+     "dur": 286
+    },
+    {
+     "texto": "el",
+     "ms": 1970,
+     "dur": 95
+    },
+    {
+     "texto": "tercer",
+     "ms": 2076,
+     "dur": 350
+    },
+    {
+     "texto": "lugar:",
+     "ms": 2436,
+     "dur": 927
+    },
+    {
+     "texto": "ni",
+     "ms": 3031,
+     "dur": 831
+    },
+    {
+     "texto": "casa,",
+     "ms": 3211,
+     "dur": 651
+    },
+    {
+     "texto": "ni",
+     "ms": 3923,
+     "dur": 170
+    },
+    {
+     "texto": "trabajo.",
+     "ms": 4103,
+     "dur": 604
+    }
+   ]
+  },
+  {
+   "id": "llevar",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/04-llevar.mp3",
+   "ms": 5621,
+   "palabras": [
+    {
+     "texto": "Pero",
+     "ms": 74,
+     "dur": 201
+    },
+    {
+     "texto": "en",
+     "ms": 286,
+     "dur": 95
+    },
+    {
+     "texto": "una",
+     "ms": 392,
+     "dur": 159
+    },
+    {
+     "texto": "de",
+     "ms": 561,
+     "dur": 95
+    },
+    {
+     "texto": "café",
+     "ms": 667,
+     "dur": 297
+    },
+    {
+     "texto": "para",
+     "ms": 975,
+     "dur": 191
+    },
+    {
+     "texto": "llevar,",
+     "ms": 1176,
+     "dur": 339
+    },
+    {
+     "texto": "nadie",
+     "ms": 2045,
+     "dur": 275
+    },
+    {
+     "texto": "se",
+     "ms": 2331,
+     "dur": 117
+    },
+    {
+     "texto": "sienta.",
+     "ms": 2458,
+     "dur": 508
+    },
+    {
+     "texto": "Pides,",
+     "ms": 3455,
+     "dur": 551
+    },
+    {
+     "texto": "pagas",
+     "ms": 4092,
+     "dur": 581
+    },
+    {
+     "texto": "y",
+     "ms": 4761,
+     "dur": 95
+    },
+    {
+     "texto": "te",
+     "ms": 4867,
+     "dur": 106
+    },
+    {
+     "texto": "vas.",
+     "ms": 4984,
+     "dur": 381
+    }
+   ]
+  },
+  {
+   "id": "calle",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/05-calle.mp3",
+   "ms": 2994,
+   "palabras": [
+    {
+     "texto": "Y",
+     "ms": 74,
+     "dur": 85
+    },
+    {
+     "texto": "de",
+     "ms": 170,
+     "dur": 106
+    },
+    {
+     "texto": "camino",
+     "ms": 286,
+     "dur": 392
+    },
+    {
+     "texto": "al",
+     "ms": 689,
+     "dur": 95
+    },
+    {
+     "texto": "trabajo",
+     "ms": 795,
+     "dur": 831
+    },
+    {
+     "texto": "pasas",
+     "ms": 1559,
+     "dur": 350
+    },
+    {
+     "texto": "por",
+     "ms": 1919,
+     "dur": 170
+    },
+    {
+     "texto": "tres",
+     "ms": 2099,
+     "dur": 222
+    },
+    {
+     "texto": "más.",
+     "ms": 2332,
+     "dur": 403
+    }
+   ]
+  },
+  {
+   "id": "cambiar",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/06-cambiar.mp3",
+   "ms": 3811,
+   "palabras": [
+    {
+     "texto": "Cambiar",
+     "ms": 85,
+     "dur": 392
+    },
+    {
+     "texto": "no",
+     "ms": 487,
+     "dur": 138
+    },
+    {
+     "texto": "te",
+     "ms": 636,
+     "dur": 106
+    },
+    {
+     "texto": "cuesta",
+     "ms": 752,
+     "dur": 297
+    },
+    {
+     "texto": "nada:",
+     "ms": 1059,
+     "dur": 666
+    },
+    {
+     "texto": "hoy",
+     "ms": 1644,
+     "dur": 222
+    },
+    {
+     "texto": "esta,",
+     "ms": 1877,
+     "dur": 585
+    },
+    {
+     "texto": "mañana",
+     "ms": 2514,
+     "dur": 456
+    },
+    {
+     "texto": "la",
+     "ms": 2980,
+     "dur": 148
+    },
+    {
+     "texto": "otra.",
+     "ms": 3139,
+     "dur": 413
+    }
+   ]
+  },
+  {
+   "id": "habito",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/07-habito.mp3",
+   "ms": 5525,
+   "palabras": [
+    {
+     "texto": "Solo",
+     "ms": 74,
+     "dur": 350
+    },
+    {
+     "texto": "te",
+     "ms": 434,
+     "dur": 159
+    },
+    {
+     "texto": "ata",
+     "ms": 604,
+     "dur": 180
+    },
+    {
+     "texto": "la",
+     "ms": 795,
+     "dur": 95
+    },
+    {
+     "texto": "costumbre.",
+     "ms": 900,
+     "dur": 625
+    },
+    {
+     "texto": "Y",
+     "ms": 2025,
+     "dur": 85
+    },
+    {
+     "texto": "casi",
+     "ms": 2120,
+     "dur": 286
+    },
+    {
+     "texto": "la",
+     "ms": 2417,
+     "dur": 95
+    },
+    {
+     "texto": "mitad",
+     "ms": 2523,
+     "dur": 339
+    },
+    {
+     "texto": "de",
+     "ms": 2872,
+     "dur": 95
+    },
+    {
+     "texto": "lo",
+     "ms": 2978,
+     "dur": 95
+    },
+    {
+     "texto": "que",
+     "ms": 3084,
+     "dur": 95
+    },
+    {
+     "texto": "hacemos",
+     "ms": 3190,
+     "dur": 403
+    },
+    {
+     "texto": "cada",
+     "ms": 3603,
+     "dur": 191
+    },
+    {
+     "texto": "día",
+     "ms": 3805,
+     "dur": 811
+    },
+    {
+     "texto": "es",
+     "ms": 4389,
+     "dur": 191
+    },
+    {
+     "texto": "costumbre.",
+     "ms": 4590,
+     "dur": 678
+    }
+   ]
+  },
+  {
+   "id": "tarjeta",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/08-tarjeta.mp3",
+   "ms": 5030,
+   "palabras": [
+    {
+     "texto": "Una",
+     "ms": 85,
+     "dur": 201
+    },
+    {
+     "texto": "cartilla",
+     "ms": 297,
+     "dur": 498
+    },
+    {
+     "texto": "a",
+     "ms": 805,
+     "dur": 42
+    },
+    {
+     "texto": "medias",
+     "ms": 858,
+     "dur": 905
+    },
+    {
+     "texto": "convierte",
+     "ms": 1686,
+     "dur": 593
+    },
+    {
+     "texto": "«la",
+     "ms": 2576,
+     "dur": 106
+    },
+    {
+     "texto": "que",
+     "ms": 2692,
+     "dur": 117
+    },
+    {
+     "texto": "pille»",
+     "ms": 2820,
+     "dur": 724
+    },
+    {
+     "texto": "en",
+     "ms": 3446,
+     "dur": 233
+    },
+    {
+     "texto": "«la",
+     "ms": 3923,
+     "dur": 117
+    },
+    {
+     "texto": "mía».",
+     "ms": 4050,
+     "dur": 392
+    }
+   ]
+  },
+  {
+   "id": "remate",
+   "audio": "voz/2026-10-24-cafes-sin-sillas/09-remate.mp3",
+   "ms": 3258,
+   "palabras": [
+    {
+     "texto": "Si",
+     "ms": 74,
+     "dur": 180
+    },
+    {
+     "texto": "no",
+     "ms": 265,
+     "dur": 148
+    },
+    {
+     "texto": "tienes",
+     "ms": 424,
+     "dur": 286
+    },
+    {
+     "texto": "sillas,",
+     "ms": 720,
+     "dur": 693
+    },
+    {
+     "texto": "dales",
+     "ms": 1379,
+     "dur": 328
+    },
+    {
+     "texto": "otra",
+     "ms": 1718,
+     "dur": 201
+    },
+    {
+     "texto": "cosa",
+     "ms": 1930,
+     "dur": 350
+    },
+    {
+     "texto": "a",
+     "ms": 2290,
+     "dur": 32
+    },
+    {
+     "texto": "la",
+     "ms": 2332,
+     "dur": 95
+    },
+    {
+     "texto": "que",
+     "ms": 2438,
+     "dur": 95
+    },
+    {
+     "texto": "volver.",
+     "ms": 2544,
+     "dur": 456
+    }
+   ]
+  }
+ ]
+}
